@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+a {
+    padding: 0;
+    margin: 0;
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    --main_color_first: #9A4EFF;
+    --main_color_second: #B9ABFF;
+    --additional_color_first: #FFAF03;
+    --additional_color_second: #FFEA3D;
+    --main_text_color: white;
+    --additional_text_color: black;
+    background-color: #fff;
+    position: relative;
+}
+
+
+.wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    background-color: var(--additional_color_second);
+    padding: 15px 30px;
+    border-radius: 500px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+/*-------- ANIMATION LINE ----------*/
+
+.animation_line {
+    width: 100%;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    background: var(--main_color_first);
+    overflow: hidden;
+}
+
+.animation_text {
+    font-weight: 300;
+    margin-left: 30px;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--main_text_color);
+    white-space: nowrap;
+    animation: marquee 3.5s infinite linear;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0)
+    }
+    50% {
+        transform: translateX(-50%)
+    }
+}
+
+/*--------- HEADER ---------*/
+
+.header {
+    width: 100%;
+    height: 200px;
+    background-color: inherit;
+}
+
+.header_content {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo_container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    object-fit: cover;
+}
+
+.header_btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.phone, .location {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.link_to {
+    padding: 14px 23px;
+    background-color: transparent;
+    outline: 3px var(--main_color_first) solid;
+    color: var(--main_color_first);
+}
+
+/*--------- NAVIGATION -----------*/
+
+.header_nav {
+    position: absolute;
+    left: 0;
+    background-color: #B9ABFF26;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav_list {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.nav_link {
+    font-weight: 300;
+    font-size: 20px;
+    padding: 17px;
+}
+
+.mini_list_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+/*--- pop-up -----*/
+
+.nav_pop-up{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    height: 550px;
+    background-color: white;
+    padding: 50px 45px;
+    border-radius: 25px;
+    box-shadow: 0px 20px 30px 0px rgba(38, 39, 95, 0.05);
+}
+
+.pop-up_list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.pop-up_list .nav_item .nav_link{
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/*----------------------*/
+
+.iframe_screen{
+    width: 100%;
+    height: 100%;
+}
+
+.pages{
+    display: none;
+    width: 100%;
+}
+
+.pages_active{
+    display: block;
+}
