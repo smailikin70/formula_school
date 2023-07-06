@@ -25,7 +25,7 @@ body {
     margin: 0 auto;
 }
 
-.content{
+.content {
     width: 100%;
     height: 100%;
 }
@@ -76,6 +76,7 @@ body {
     width: 100%;
     height: 200px;
     background-color: inherit;
+    margin-bottom: 60px;
 }
 
 .header_content {
@@ -155,7 +156,7 @@ body {
 
 /*--- pop-up -----*/
 
-.nav_pop-up{
+.nav_pop-up {
     position: absolute;
     top: 60px;
     left: 0;
@@ -163,17 +164,17 @@ body {
     background-color: white;
     padding: 50px 45px;
     border-radius: 25px;
-    box-shadow: 0px 20px 30px 0px rgba(38, 39, 95, 0.05);
+    box-shadow: 0 20px 30px 0 rgba(38, 39, 95, 0.05);
 }
 
-.pop-up_list{
+.pop-up_list {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 30px;
 }
 
-.pop-up_list .nav_item .nav_link{
+.pop-up_list .nav_item .nav_link {
     padding: 0;
     margin: 0;
     font-style: normal;
@@ -183,16 +184,77 @@ body {
 
 /*----------------------*/
 
-.iframe_screen{
+.iframe_screen {
     width: 100%;
     height: 100%;
 }
 
-.pages{
+.pages {
     display: none;
     width: 100%;
 }
 
-.pages_active{
+.pages_active {
     display: block;
 }
+
+
+/*----------- FOOTER -------------*/
+
+.footer {
+    width: 100%;
+    height: 430px;
+    background-color: #333333;
+    color: var(--main_text_color);
+}
+
+.footer_nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 37px 0;
+}
+
+.footer_nav_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer_nav_item {
+    padding: 0;
+    margin: 0;
+    color: var(--main_text_color);
+}
+
+.footer_nav_item:last-child {
+    color: #FFEA3D;
+}
+
+.footer_nav_link {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    padding: 0;
+    margin: 0;
+    color: inherit;
+}
+
+.footer_culomn_name {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    color: #B9ABFF;
+}
+
+.with_svg {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+

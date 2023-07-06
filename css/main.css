@@ -1,0 +1,108 @@
+/*_______________________________*/
+/*-----------MAIN PAGES----------*/
+/*++++++++++++++++++++++++++++*/
+
+/*------- BANNER -------*/
+
+.promo_banner{
+    width: 100%;
+    padding: 60px 80px;
+    border-radius: 25px;
+    background-color: var(--main_color_first);
+    display: flex;
+    align-items: center;
+    gap: 110px;
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.banner_content{
+    z-index: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.banner_name{
+    font-weight: 500;
+    line-height: normal;
+    font-size: 48px;
+    color: var(--main_text_color);
+    margin-bottom: 22px;
+    width: 600px;
+}
+
+.banner_descr{
+    font-weight: 500;
+    line-height: normal;
+    font-size: 25px;
+    color: var(--main_text_color);
+    margin-bottom: 58px;
+    max-width: 565px;
+}
+
+.banner_btn{
+    margin-bottom: 50px;
+}
+
+.banner_photo{
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.banner_img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/*----- BANNER DECORATIONS ------*/
+
+.promo_dec_bg{
+    position: absolute;
+    z-index: 1;
+}
+
+.dec_bg_1{
+    right: 0;
+    bottom: 0;
+}
+
+.dec_bg_2{
+    left: 0;
+    bottom: 0;
+}
+
+.dec_bg_3{
+    right: 0;
+    top: 0;
+}
+
+.promo_decor_1, .promo_decor_2, .promo_decor_3{
+    position: absolute;
+    z-index: 4;
+}
+
+.promo_decor_1{
+    bottom: -30px;
+    left: -100px;
+}
+
+.promo_decor_2{
+    top: 10px;
+    right: -80px;
+}
+
+.promo_decor_3{
+    bottom: -30px;
+    right: -80px;
+}
+
+
+/*------------ RATING -----------*/
+
+
+
