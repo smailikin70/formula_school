@@ -10,7 +10,7 @@ a {
 body {
     font-family: 'Manrope', sans-serif;
     --main_color_first: #9A4EFF;
-    --main_color_second: #B9ABFF;
+    --main_color_second: #B9ABFF26;
     --additional_color_first: #FFAF03;
     --additional_color_second: #FFEA3D;
     --main_text_color: white;
@@ -38,6 +38,16 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
+}
+
+
+.block_title{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 129.5%;
+    color: var(--additional_text_color);
+    margin-bottom: 40px;
 }
 
 /*-------- ANIMATION LINE ----------*/
