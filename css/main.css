@@ -473,28 +473,23 @@
 
 .teachers{
     padding-top: 150px;
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: masonry;
-    align-items: start;
-    gap: 24px;
     margin-bottom: 250px;
 }
 
-.grid-item{
-    width: 800px;
+.swiper{
+    width: 100%;
+    height: 900px;
 }
 
-.teachers_title{
-    position: absolute;
+.swiper-slide{
 }
 
 .teachers_card{
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    justify-content: center;
     gap: 27px;
     padding: 44px 55px;
     background-color: var(--main_color_first);
@@ -502,12 +497,14 @@
 }
 
 .teachers_photo{
+    width: 100%;
+    height: 100%;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .teachers_img{
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .teachers_info{
@@ -551,5 +548,22 @@
     bottom: -90px;
     left: 600px;
     display: flex;
+    align-items: center;
+}
+
+/*--------------- FILES ---------- */
+
+.files_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 130px;
+}
+
+.files_link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
