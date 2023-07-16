@@ -208,6 +208,41 @@ body {
     display: block;
 }
 
+/*----------- SWIPER -------------*/
+
+.swiper{
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 50px;
+    overflow: visible;
+}
+
+.swiper-wrapper{
+    gap: 25px;
+}
+
+.swiper-slide{
+    border-radius: 50px;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    border-radius: 100px;
+    background-color: var(--additional_color_first);
+    padding: 40px;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after{
+    display: none;
+}
+
+.swiper-button-svg{
+    transform: rotate(30deg);
+}
+
+.swiper-autoheight .swiper-wrapper{
+    align-items: center;
+}
+
 
 /*----------- FOOTER -------------*/
 
