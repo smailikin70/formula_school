@@ -21,6 +21,8 @@ const swiper = new Swiper('.swiper', {
 
     coverflowEffect: {
         depth: 10,
-        rotate: 20,
+        rotate: 10,
+        scale: 0.9,
+        slideShadows: false,
     },
 });

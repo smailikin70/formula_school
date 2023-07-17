@@ -534,6 +534,7 @@
     display: flex;
     align-items: center;
     margin: 0 auto;
+    margin-top: 70px;
 }
 
 /*--------------- FILES ---------- */
@@ -558,6 +559,10 @@
 
 .feedback{
     margin-bottom: 130px;
+}
+
+.feedback_title{
+    margin-bottom: 100px;
 }
 
 .feedback_card {
