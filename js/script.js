@@ -1,28 +1,16 @@
 const swiper = new Swiper('.swiper', {
-
-    direction: 'horizontal',
-
+    // Optional parameters
+    direction: 'vertical',
     loop: true,
 
-    autoplay: true,
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
 
+    // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-    },
-
-    autoHeight: true,
-
-    slidesPerView: 1,
-
-    centeredSlides: true,
-
-    effect: 'coverflow',
-
-    coverflowEffect: {
-        depth: 10,
-        rotate: 10,
-        scale: 0.9,
-        slideShadows: false,
     },
 });
