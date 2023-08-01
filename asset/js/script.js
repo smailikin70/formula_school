@@ -12,3 +12,9 @@ const swiper = new Swiper('.swiper', {
 });
 
 new Accordion('.accordion-container');
+
+function ChangeProg() {
+    const selectElement = document.getElementById('Prog');
+    const selectedProg = selectElement.value;
+    alert('Вы выбрали: ' + selectedProg);
+}

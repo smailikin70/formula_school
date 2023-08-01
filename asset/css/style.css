@@ -19,7 +19,7 @@
     box-sizing: border-box;
     background-color: #fff;
     position: relative;
-    overflow-x: hidden;
+    overflow-x: clip;
     color: var(--text_2);
 }
 
@@ -587,7 +587,7 @@
 .teachers__swiper {
     margin: 0 auto;
     width: 100%;
-    overflow: visible;
+    /*overflow: visible;*/
     position: relative;
     margin-bottom: 50px;
 }
@@ -664,6 +664,8 @@
     gap: 25px;
 }
 
+
+
 /*FEEDBACKS   */
 
 .feedback__card {
@@ -675,7 +677,7 @@
     background: rgba(185, 171, 255, 0.15);
 }
 
-.feedback__img{
+.feedback__img {
     max-width: 45%;
     object-fit: contain;
 }
@@ -711,12 +713,12 @@
     border-radius: 25px;
 }
 
-.feedback__item:last-child{
+.feedback__item:last-child {
     color: var(--text_2);
     background-color: var(--color_4);
 }
 
-.feedback__text{
+.feedback__text {
     font-size: var(--fz-text);
     font-style: normal;
     font-weight: 400;
@@ -725,7 +727,7 @@
 
 /*GO TO POP-UP*/
 
-.go-to-pop-up{
+.go-to-pop-up {
     padding: 60px;
     margin: 0 auto;
     border: none;
@@ -737,7 +739,7 @@
     margin-bottom: 100px;
 }
 
-.go-to-pop-up__title{
+.go-to-pop-up__title {
     font-size: var(--fz-h1);
     font-style: normal;
     font-weight: 500;
@@ -745,7 +747,7 @@
     margin-bottom: 40px;
 }
 
-.go-to-pop-up__span{
+.go-to-pop-up__span {
     padding: 5px 10px;
     background-color: var(--color_4);
     border-radius: 50px;
@@ -754,11 +756,11 @@
 
 /*SCHOOL-ACHIEVMENTS */
 
-.school__achivements{
+.school__achivements {
 
 }
 
-.achievment__list{
+.achievment__list {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -766,23 +768,23 @@
     grid-template-areas: 'A B C''E F F';
 }
 
-.F{
+.F {
     grid-area: F;
 }
 
-.achievment__item{
+.achievment__item {
     border-radius: 25px;
     background: rgba(185, 171, 255, 0.15);
 }
 
-.achievment__card{
+.achievment__card {
     border-radius: 25px;
     width: 100%;
     height: 100%;
     padding: 33px 57px;
 }
 
-.achievment__number{
+.achievment__number {
     color: var(--color_1);
     font-size: 50px;
     font-style: normal;
@@ -791,7 +793,7 @@
     margin-bottom: 6px;
 }
 
-.achievment__name{
+.achievment__name {
     color: var(--text_2);
     font-size: var(--fz-title);
     font-style: normal;
@@ -800,7 +802,7 @@
     margin-bottom: 10px;
 }
 
-.achievment__text{
+.achievment__text {
     color: var(--text_2);
     font-size: var(--fz-text);
     font-style: normal;
@@ -808,7 +810,7 @@
     line-height: 150%;
 }
 
-.purple__card{
+.purple__card {
     padding: 55px 60px;
     display: flex;
     flex-direction: column;
@@ -820,25 +822,25 @@
     background-size: cover;
 }
 
-.achievment__white_text{
+.achievment__white_text {
     font-size: var(--fz-h1);
 }
 
 /*ACCORDION*/
 
-.accordion-container{
+.accordion-container {
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
 
-.ac{
+.ac {
     padding: 40px 60px;
     border-radius: 25px;
     background: rgba(185, 171, 255, 0.15);
 }
 
-.ac .ac-trigger{
+.ac .ac-trigger {
     padding: 0;
     font-size: var(--fz-title);
     font-style: normal;
@@ -846,7 +848,7 @@
     line-height: 150%;
 }
 
-.ac .ac-trigger:after{
+.ac .ac-trigger:after {
     color: var(--text_1);
     width: auto;
     padding: 5px 19px;
@@ -854,11 +856,11 @@
     background-color: var(--color_2);
 }
 
-.ac.is-active>.ac-header .ac-trigger::after{
+.ac.is-active > .ac-header .ac-trigger::after {
     background-color: var(--color_1);
 }
 
-.ac .ac-panel .ac-text{
+.ac .ac-panel .ac-text {
     font-size: var(--fz-text);
     font-style: normal;
     font-weight: 500;
@@ -866,6 +868,98 @@
 }
 
 
+/*PARTHNEERS*/
+
+.parhneers__content {
+    display: grid;
+    grid-template-areas:     'A B B C C F F F F'
+                             'D D D D D F F F F';
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.parhners__logos:nth-child(1) {
+    grid-area: A;
+}
+
+.parhners__logos:nth-child(2) {
+    grid-area: B;
+}
+
+.parhners__logos:nth-child(3) {
+    grid-area: C;
+}
+
+.parhners__logos:nth-child(4) {
+    grid-area: D;
+}
+
+.parhners__logos:last-child {
+    grid-area: F;
+}
+
+/*FORM to GO*/
+
+
+.form__content{
+    background-color: var(--color_1);
+    border-radius: 25px;
+    padding: 90px 60px;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 132px;
+}
+
+.yallow__text{
+    background-color: var(--color_4);
+    border-radius: 25px;
+    padding: 2px 5px;
+    color: var(--text_2);
+}
+
+.form__subtitle{
+    color: #FFF;
+    font-size: var(--fz-title);
+    font-weight: 500;
+    line-height: 150%;
+    margin-bottom: 50px;
+}
+
+.form__display{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+.input{
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 50px;
+    background-color: #fff;
+    font-size: var(--fz-title);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.6px;
+    color: #808080;
+}
+
+.form__btn{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    background-color: var(--color_4);
+}
+
+.form__img{
+    width: 100%;
+    object-fit: coverr;
+}
 
 
 /*----------- FOOTER -------------*/
