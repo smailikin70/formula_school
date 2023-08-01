@@ -958,7 +958,7 @@
 
 .form__img{
     width: 100%;
-    object-fit: coverr;
+    object-fit: cover;
 }
 
 
