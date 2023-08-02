@@ -5,8 +5,9 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
     spaceBetween: 30,
-    slidesPerView: 1.8,
-    centeredSlides: true,
+    slidesPerView: 2,
+    autoplay: 200,
+    // centeredSlides: true,
     freeMode: true,
     autoHeight: true,
 });
