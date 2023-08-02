@@ -54,17 +54,20 @@
 }
 
 .btn {
-    color: var(--text-black);
     display: inline-flex;
     justify-content: center;
     align-items: center;
     font-weight: 500;
-    padding: 20px 26px;
+    padding: 1rem 1.25rem;
     border-radius: 50px;
+    border: 3px transparent solid;
+}
+
+.btn--primary {
     background-color: var(--yellow);
 }
 
-.alt__btn {
+.btn--secondary {
     background-color: transparent;
     border: 3px var(--primary-100) solid;
     color: var(--primary-100);
@@ -161,16 +164,6 @@
 .header-content__location::before {
     line-height: 0;
     content: url("../source/img/geo.svg");
-}
-
-.text__btn {
-    color: var(--text-black);
-    padding-left: 40px;
-    background: url("../source/img/tel.png") no-repeat left;
-}
-
-.text__btn-2 {
-    background: url("../source/img/geo.png") no-repeat;
 }
 
 /*NAVIGATION*/
