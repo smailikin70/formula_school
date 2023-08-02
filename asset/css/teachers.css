@@ -1,0 +1,66 @@
+.teachers__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teachers__swiper {
+    margin: 0 auto;
+    width: 100%;
+    /*overflow: visible;*/
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.teachers__card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'A B''A C';
+    gap: 25px;
+    padding: 50px;
+    background-color: var(--primary-100);
+    border-radius: 25px;
+}
+
+.teachers__photo {
+    grid-area: A;
+    display: flex;
+    align-items: center;
+}
+
+.teachers__img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.teachers__name {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    color: #FFF;
+    font-size: var(--text-2xl);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    padding: 0 15px;
+}
+
+.info__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: start;
+    gap: 15px;
+}
+
+.info__item {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: var(--yellow);
+    border-radius: 25px;
+}
+
+.teachers__btn {
+    padding: 10px 15px;
+}

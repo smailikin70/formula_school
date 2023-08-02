@@ -1,0 +1,31 @@
+.records {
+    background-color: rgba(185, 171, 255, 0.16);
+}
+
+.record__list {
+    padding: 50px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.record__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.record__number {
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--primary-100);
+}
+
+.number__name {
+    font-weight: 500;
+    font-size: var(--text-base);
+    max-width: 300px;
+    text-align: center;
+}

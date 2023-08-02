@@ -1,0 +1,25 @@
+.go-to-pop-up {
+    padding: 60px;
+    border: none;
+    border-radius: 0;
+    background-color: var(--primary-100);
+    background-image: url('../source/img/go-to-pop-up__bg.png');
+    background-repeat: no-repeat;
+    background-position: 80% center;
+    margin: 0 auto 100px;
+}
+
+.go-to-pop-up__title {
+    font-size: var(--text-2xl);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    margin-bottom: 40px;
+}
+
+.go-to-pop-up__span {
+    padding: 5px 10px;
+    background-color: var(--yellow);
+    border-radius: 50px;
+    color: var(--text-black);
+}

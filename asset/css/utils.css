@@ -1,0 +1,79 @@
+.main__setting {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: var(--text-base);
+    line-height: normal;
+    background-color: #fff;
+    position: relative;
+    overflow-x: clip;
+    color: var(--text-black);
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0 100px;
+    width: 100%;
+}
+
+.purple__wrapper {
+    width: 100%;
+    padding: 100px;
+    border-radius: 50px;
+    background-color: var(--primary-100);
+    margin: 0 auto 100px;
+}
+
+.section {
+    margin-bottom: 100px;
+    border-radius: 50px;
+}
+
+.section__title {
+    font-size: var(--text-2xl);
+    font-weight: 700;
+    line-height: 130%;
+    margin-bottom: 45px;
+    width: 100%;
+    text-align: start;
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    padding: 1rem 1.25rem;
+    border-radius: 50px;
+    border: 3px transparent solid;
+}
+
+.btn--primary {
+    background-color: var(--yellow);
+}
+
+.btn--secondary {
+    background-color: transparent;
+    border: 3px var(--primary-100) solid;
+    color: var(--primary-100);
+}
+
+.h1__title {
+    color: var(--text-white);
+    font-size: var(--text-2xl);
+    font-weight: 500;
+}
+
+.h1__descr {
+    font-size: var(--text-base);
+    font-weight: 500;
+    color: var(--text-white);
+}
+
+.main__text {
+    font-weight: 500;
+    font-size: var(--text-xs);
+}
+
+.purple__text {
+    color: var(--primary-100);
+}

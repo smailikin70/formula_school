@@ -1,0 +1,38 @@
+.accordion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.ac {
+    padding: 40px 60px;
+    border-radius: 25px;
+    background: rgba(185, 171, 255, 0.15);
+}
+
+.ac .ac-trigger {
+    padding: 0;
+    font-size: var(--text-base);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.ac .ac-trigger:after {
+    color: var(--text-white);
+    width: auto;
+    padding: 5px 19px;
+    border-radius: 50%;
+    background-color: var(--primary-15);
+}
+
+.ac.is-active > .ac-header .ac-trigger::after {
+    background-color: var(--primary-100);
+}
+
+.ac .ac-panel .ac-text {
+    font-size: var(--text-xs);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
