@@ -8,7 +8,7 @@ const swiper = new Swiper('.swiper', {
     slidesPerView: 2,
     autoplay: 200,
     // centeredSlides: true,
-    freeMode: true,
+    // freeMode: true,
     autoHeight: true,
 });
 
