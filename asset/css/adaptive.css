@@ -6,7 +6,7 @@
 
     .card__item {
         padding: 15px;
-        border: 2px var(--color_2) solid;
+        border: 2px var(--primary-15) solid;
     }
 
     .card__img {
