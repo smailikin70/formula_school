@@ -64,3 +64,7 @@
 .teachers__btn{
 
 }
+
+.swiper-button-next, .swiper-button-prev{
+    color: var(--yellow);
+}

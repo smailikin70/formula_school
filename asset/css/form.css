@@ -56,3 +56,41 @@
     width: 100%;
     object-fit: cover;
 }
+
+/*----------- POP-UP  ----------*/
+
+.pop-up {
+    visibility: hidden;
+    position: fixed;
+    z-index: 500;
+    left: 30%;
+    top: center;
+    width: 40%;
+    background-color: #F9F9F9;
+    border-radius: 25px;
+    box-shadow: 1px 1px 20px #333333;
+    .pop-up__form{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        padding: 60px 40px;
+    }
+
+    .pop-up__title{
+        font-size: var(--text-2xl);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 129.5%;
+    }
+
+    .pop-up__form__decription{
+        font-size: var(--text-base);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+    }
+}
+
+.pop-up__active{
+    visibility: visible;
+}
