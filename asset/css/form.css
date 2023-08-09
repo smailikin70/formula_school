@@ -60,11 +60,11 @@
 /*----------- POP-UP  ----------*/
 
 .pop-up {
-    visibility: hidden;
+    display: none;
     position: fixed;
     z-index: 500;
     left: 30%;
-    top: center;
+    top: auto;
     width: 40%;
     background-color: #F9F9F9;
     border-radius: 25px;
@@ -92,5 +92,5 @@
 }
 
 .pop-up__active{
-    visibility: visible;
+    display: block;
 }

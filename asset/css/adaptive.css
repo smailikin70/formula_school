@@ -22,11 +22,11 @@
         font-size: 12px;
     }
 
-    .ac .ac-trigger{
+    .ac .ac-trigger {
         font-size: 26px;
     }
 
-    .footer_nav_link{
+    .footer_nav_link {
         font-size: 18px;
     }
 }
@@ -84,73 +84,117 @@
         font-size: 16px;
     }
 
-    .card-title__number{
+    .card-title__number {
         font-size: 40px;
     }
 
-    .card-title__text{
+    .card-title__text {
         font-size: 16px;
     }
 
-    .card-item__text{
+    .card-item__text {
         font-size: 14px;
     }
 
-    .branch__button__name{
+    .branch__button__name {
         font-size: 14px;
     }
 
-    .study-program{
+    .study-program {
         gap: 25px;
     }
 
-    .study-program__btn{
+    .study-program__btn {
         margin-bottom: 0;
     }
 
-    .content__title{
+    .content__title {
         max-width: 100%;
     }
 
-    .content__item{
+    .content__item {
         font-size: 16px;
     }
 
-    .additional__display{
+    .additional__display {
         padding: 40px;
     }
 
-    .teachers__name{
+    .teachers__name {
         font-size: 22px;
     }
 
-    .info__item{
+    .info__item {
         font-size: 14px;
     }
 
-    .file__download{
+    .file__download {
         font-size: 14px;
     }
 
-    .feedback__item{
+    .feedback__item {
         font-size: 12px;
     }
 
-    .achievment__number{
+    .achievment__number {
         font-size: 40px;
     }
 
-    .ac .ac-trigger{
+    .ac .ac-trigger {
         font-size: 22px;
     }
 
-    .ac .ac-panel .ac-text{
+    .ac .ac-panel .ac-text {
         font-size: 16px;
     }
 
-    .footer_nav_link{
+    .footer_nav_link {
         font-size: 14px;
     }
 
+
+}
+
+@media screen and (max-width: 600px) {
+
+    :root {
+        --text-2xl: 1rem;
+        --text-base: 0.75rem;
+        --text-xs: 0.4rem;
+    }
+
+    .wrapper {
+        padding: 0;
+    }
+
+    .section {
+        margin-bottom: 15px;
+    }
+
+    .header__content:first-child {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .hello-screen {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 25px;
+    }
+
+    .record__list {
+        flex-direction: column;
+    }
+
+    .record__list li:nth-child(even) {
+        display: none;
+    }
+
+    .record__number {
+
+    }
 
 }
