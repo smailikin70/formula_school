@@ -9,12 +9,6 @@
     color: var(--text-black);
 }
 
-.wrapper {
-    margin: 0 auto;
-    padding: 0 100px;
-    width: 100%;
-}
-
 .purple__wrapper {
     width: 100%;
     padding: 100px;
