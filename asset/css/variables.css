@@ -1,15 +1,20 @@
 :root {
     --primary-100: rgba(154, 78, 255);
+    --primary-50: rgb(185, 171, 255);
     --primary-15: rgb(185, 171, 255, .15);
     --orange: rgb(255, 175, 3);
     --yellow: rgb(255, 234, 61);
     --text-gray: #333333;
+    --text-gray-20: #2F2F2F;
     --text-white: white;
     --line-height-base: 150%;
     --text-black: black;
     --text-5xl: 3rem;
     --text-4xl: 2.5rem;
+    --text-3xl: 1.75rem;
     --text-2xl: 1.5rem;
+    --text-xl: 1.25rem;
+    --text-lg: 1.125rem;
     --text-base: 1rem;
     --text-sm: 0.875rem;
     --text-xs: 0.75rem;
