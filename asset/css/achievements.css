@@ -1,32 +1,81 @@
-.records {
-    background-color: rgba(185, 171, 255, 0.16);
+.achievements {
+    padding: 30px;
+    border-radius: 1.5rem;
+    background-color: var(--primary-15);
 }
 
-.record__list {
-    padding: 50px 70px;
+.achievements__list {
     display: flex;
     justify-content: space-between;
-    align-items: start;
-    gap: 10px;
+    gap: 60px;
 }
 
-.record__item {
+.achievement {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    max-width: 250px;
 }
 
-.record__number {
-    font-size: 50px;
+.achievement__value {
+    font-size: var(--text-5xl);
+    line-height: var(--line-height-base);
     font-weight: 400;
     color: var(--primary-100);
 }
 
-.number__name {
-    font-weight: 500;
+.achievement__unit {
+    font-weight: 700;
     font-size: var(--text-base);
-    max-width: 300px;
+    color: var(--text-gray);
+    line-height: var(--line-height-base);
     text-align: center;
+}
+
+@media screen and (max-width: 1310px) {
+    .achievements__list {
+        gap: 40px;
+    }
+
+    .achievement:last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1054px) {
+    .achievements__list {
+        gap: 20px;
+    }
+
+    .achievement__value {
+        font-size: var(--text-4xl);
+    }
+
+    .achievement__unit {
+        font-size: var(--text-sm);
+    }
+}
+
+@media screen and (max-width: 798px) {}
+
+@media screen and (max-width: 670px) {
+    .achievements__list {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .achievement {
+        width: 100%;
+        max-width: none;
+    }
+
+    .achievement:last-child {
+        display: flex;
+    }
+
+    .achievement__unit {
+        font-size: var(--text-base);
+    }
 }
