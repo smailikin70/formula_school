@@ -55,9 +55,7 @@
     font-size: var(--text-2xl);
     font-weight: 700;
     line-height: 130%;
-    margin-bottom: 45px;
     width: 100%;
-    text-align: start;
 }
 
 .btn {
