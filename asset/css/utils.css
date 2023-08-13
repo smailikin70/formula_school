@@ -38,6 +38,11 @@
     color: var(--text-black);
 }
 
+*:focus {
+    outline: 3px black solid;
+    outline-offset: 5px;
+}
+
 .purple__wrapper {
     width: 100%;
     padding: 100px;
@@ -47,7 +52,7 @@
 }
 
 .section {
-    margin-bottom: 100px;
+    margin-bottom: 4em;
     border-radius: 50px;
 }
 
@@ -56,6 +61,7 @@
     font-weight: 700;
     line-height: 130%;
     width: 100%;
+    margin-bottom: 2em;
 }
 
 .btn {
@@ -69,14 +75,36 @@
     gap: 10px;
 }
 
+
+.btn:focus {
+    outline: 3px black solid;
+    outline-offset: 5px;
+}
+
+button:focus {
+    outline: 3px black solid;
+    outline-offset: 5px;
+}
+
+.btn:hover {
+    color: var(--text-white);
+    background-color: var(--orange);
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
 .btn--primary {
     background-color: var(--yellow);
 }
+
 
 .btn--secondary {
     background-color: transparent;
     border: 3px var(--primary-100) solid;
     color: var(--primary-100);
+}
+
+.btn--secondary:hover {
+    background-color: var(--primary-100);
 }
 
 .h1__title {

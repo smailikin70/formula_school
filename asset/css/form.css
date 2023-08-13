@@ -14,6 +14,7 @@
     border-radius: 25px;
     padding: 2px 5px;
     color: var(--text-black);
+    white-space: nowrap;
 }
 
 .form__subtitle {

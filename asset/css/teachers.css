@@ -25,7 +25,10 @@
 .teachers__photo {
     grid-area: A;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #B9ABFF;
+    border-radius: 25px;
 }
 
 .teachers__img {
@@ -62,9 +65,12 @@
 }
 
 .teachers__btn{
-
 }
 
 .swiper-button-next, .swiper-button-prev{
-    color: var(--yellow);
+    color: black;
+    padding: 40px;
+    border-radius: 50%;
+    background: #FDFDFD;
+    box-shadow: 0 20px 30px 0 rgba(38, 39, 95, 0.05);
 }
