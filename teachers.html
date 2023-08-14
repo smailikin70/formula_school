@@ -63,97 +63,103 @@
             Летние интенсивы 2023
         </span>
     </marquee>
-    <div class="wrapper">
-        <div class="header__content header-content">
-            <a href="/" class="logo__btn">
-                <img src="asset/source/img/logo.png" alt="" class="logo">
-            </a>
-            <a href="tel:+74232938538" class="header-content__tel">
-                8 (423) 2-938-538
-            </a>
-            <a href="geo: 43.115490, 131.936716" class="header-content__location">
-                Владивосток
-            </a>
-            <a href="https://online.formula-ege.ru/wpm/start/" class="btn btn--secondary header-content__secondary-btn">
-                Онлайн-школа
-            </a>
-            <button class="btn btn--primary header-content__primary-btn">
-                Запись на очные занятия
-            </button>
-        </div>
-        <nav class="nav">
-            <div class="bg__nowrap"></div>
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <button class="nav__link open-list__btn">
-                        Курсы
-                    </button>
-                </li>
-                <li class="nav__item">
-                    <a href="https://formula-ege.ru/teachers.php" class="nav__link">
-                        Учителя
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="" class="nav__link">
-                        Достижения
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="" class="nav__link">
-                        Фотогалерея
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="" class="nav__link">
-                        Отзывы
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="" class="nav__link">
-                        Цены
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="" class="nav__link">
-                        Контакты
-                    </a>
-                </li>
-            </ul>
-        </nav>
+    <div class="container header__content">
+        <a href="/" class="logo__btn">
+            <img src="asset/source/img/logo.png" alt="" class="logo">
+        </a>
+        <a href="tel:+74232938538" class="header-content__tel">
+            8 (423) 2-938-538
+        </a>
+        <a href="geo: 43.115490, 131.936716" class="header-content__location">
+            Владивосток
+        </a>
+        <a href="https://online.formula-ege.ru/wpm/start/" class="btn btn--secondary header-content__secondary-btn">
+            Онлайн-школа
+        </a>
+        <button class="btn btn--primary header-content__primary-btn">
+            Запись на очные занятия
+        </button>
+    </div>
+    <nav class="nav">
+        <div class="bg__nowrap"></div>
+        <ul class="container nav__list">
+            <li class="nav__item">
+                <button class="nav__link open-list__btn">
+                    Курсы
+                </button>
+            </li>
+            <li class="nav__item">
+                <a href="https://formula-ege.ru/teachers.php" class="nav__link">
+                    Учителя
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="" class="nav__link">
+                    Достижения
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="" class="nav__link">
+                    Фотогалерея
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="" class="nav__link">
+                    Отзывы
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="" class="nav__link">
+                    Цены
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="" class="nav__link">
+                    Контакты
+                </a>
+            </li>
+        </ul>
+    </nav>
     </div>
 </header>
 
 <main class="main">
 
-    <div class="container">
+    <div class="container teachers__container">
 
         <div class="section teachers__section">
 
             <div class="teacher__banner">
-
+                <div class="teacher__banner__content">
+                    <h1 class="h1__title teacher__banner__title">
+                        Преподаватели Формулы -
+                    </h1>
+                    <h2 class="h1__descr teacher__banner__descr">
+                        высококвалифицированные специалисты
+                        со стажем более 15 лет
+                    </h2>
+                </div>
+                <div class="teacher__banner__photo"></div>
             </div>
 
-            <ul class="subject__list">
-                <li class="subject__item">Русский язык и литература</li>
-                <li class="subject__item">Математика</li>
-                <li class="subject__item">Обществознание и история</li>
-                <li class="subject__item">География</li>
-                <li class="subject__item">Химия и биология</li>
-                <li class="subject__item">Физика</li>
-                <li class="subject__item">Информатика</li>
-                <li class="subject__item">Английский язык</li>
+            <ul class="subject__list filter-menu">
+                <li class="subject__item" data-filter="rus">Русский язык и литература</li>
+                <li class="subject__item" data-filter="math">Математика</li>
+                <li class="subject__item" data-filter="hist">Обществознание и история</li>
+                <li class="subject__item" data-filter="geo">География</li>
+                <li class="subject__item" data-filter="bio">Химия и биология</li>
+                <li class="subject__item" data-filter="phys">Физика</li>
+                <li class="subject__item" data-filter="inf">Информатика</li>
+                <li class="subject__item" data-filter="eng">Английский язык</li>
             </ul>
 
             <div class="section__content teachers__content">
 
-                <div class="teachers__card">
+                <div class="teachers__card rus">
                     <div class="teachers__photo">
-                        <img src="asset/source/teachers_photo/gubco_ludmila.png" alt="" class="teachers__img">
+                        <img src="asset/source/teachers_photo/ilienko_valentina.jpeg" alt="" class="teachers__img">
                     </div>
-                    <span class="teachers__name">
-                        Губко Людмила Владимировна
-                    </span>
+                    <span class="teachers__name">Ильенко Валентина Юрьевна</span>
                     <ul class="info__list">
                         <li class="info__item">Учитель высшей квалификационной категории</li>
                         <li class="info__item">ОГЭ</li>
@@ -164,46 +170,146 @@
                         <li class="info__item">Филиал: 2-я речка</li>
                     </ul>
                 </div>
-
-                <div class="teachers__card">
+                <div class="teachers__card rus">
                     <div class="teachers__photo">
-                        <img src="asset/source/teachers_photo/gubco_ludmila.png" alt="" class="teachers__img">
+                        <img src="asset/source/teachers_photo/kovalchuk_nadezda.png" alt="" class="teachers__img">
                     </div>
-                    <span class="teachers__name">
-                        Губко Людмила Владимировна
-                    </span>
+                    <span class="teachers__name">Ковальчук Надежда Матвеевна</span>
                     <ul class="info__list">
-                        <li class="info__item">Директор образовательного центра «Формула»</li>
-                        <li class="info__item">Преподаватель физики</li>
-                        <li class="info__item">Почетный педагог России</li>
+                        <li class="info__item">Преподаватель ДВФУ</li>
+                        <li class="info__item">Русский язык</li>
+                        <li class="info__item">Предедатель ЭКСПОКОМ</li>
+                        <li class="info__item">9-е, 10-е, 11-е классы</li>
                     </ul>
                 </div>
-
-                <div class="teachers__card">
+                <div class="teachers__card rus">
                     <div class="teachers__photo">
                         <img src="asset/source/teachers_photo/gubco_ludmila.png" alt="" class="teachers__img">
                     </div>
-                    <span class="teachers__name">
-                        Губко Людмила Владимировна
-                    </span>
+                    <span class="teachers__name">Гончарова Татьяна Ивановна</span>
                     <ul class="info__list">
-                        <li class="info__item">Директор образовательного центра «Формула»</li>
-                        <li class="info__item">Преподаватель физики</li>
-                        <li class="info__item">Почетный педагог России</li>
+                        <li class="info__item">Учитель высшей квалификационной категории</li>
+                        <li class="info__item">Русский язык</li>
+                        <li class="info__item">ЕГЭ</li>
+                        <li class="info__item">11-е классы</li>
+                        <li class="info__item">Филиал: Луговая</li>
                     </ul>
                 </div>
-
-                <div class="teachers__card">
+                <div class="teachers__card rus">
                     <div class="teachers__photo">
                         <img src="asset/source/teachers_photo/gubco_ludmila.png" alt="" class="teachers__img">
                     </div>
-                    <span class="teachers__name">
-                        Губко Людмила Владимировна
-                    </span>
+                    <span class="teachers__name">Клименко Евгения Николаевна</span>
                     <ul class="info__list">
-                        <li class="info__item">Директор образовательного центра «Формула»</li>
-                        <li class="info__item">Преподаватель физики</li>
-                        <li class="info__item">Почетный педагог России</li>
+                        <li class="info__item">Учитель высшей квалификационной категории</li>
+                        <li class="info__item">Русский язык</li>
+                        <li class="info__item">ОГЭ</li>
+                        <li class="info__item">Филиал: Чуркин</li>
+                    </ul>
+                </div>
+                <div class="teachers__card rus">
+                    <div class="teachers__photo">
+                        <img src="asset/source/teachers_photo/puntus_larisa.png" alt="" class="teachers__img">
+                    </div>
+                    <span class="teachers__name">Пунтус Лариса Анатольевна</span>
+                    <ul class="info__list">
+                        <li class="info__item">Русский язык</li>
+                        <li class="info__item">Литература</li>
+                        <li class="info__item">8-е, 9-е классы</li>
+                        <li class="info__item">Филиал: Гоголя, Луговая</li>
+                    </ul>
+                </div>
+                <div class="teachers__card rus">
+                    <div class="teachers__photo">
+                        <img src="asset/source/teachers_photo/gubco_ludmila.png" alt="" class="teachers__img">
+                    </div>
+                    <span class="teachers__name">Слободянникова Надежда Викторовна</span>
+                    <ul class="info__list">
+                        <li class="info__item">Учитель высшей квалификационной категории</li>
+                        <li class="info__item">Русский язык</li>
+                        <li class="info__item">ЕГЭ</li>
+                        <li class="info__item">9-е, 11-е классы</li>
+                        <li class="info__item">Филиал: Гоголя</li>
+                    </ul>
+                </div>
+                <div class="teachers__card rus">
+                    <div class="teachers__photo">
+                        <img src="asset/source/teachers_photo/sokolova_elvira.jpeg" alt="" class="teachers__img">
+                    </div>
+                    <span class="teachers__name">Соколова Эльвира Валерьяновна</span>
+                    <ul class="info__list">
+                        <li class="info__item">Учитель высшей квалификационной категории</li>
+                        <li class="info__item">ОГЭ</li>
+                        <li class="info__item">Благодарность Законодательного Собрания Приморского края</li>
+                        <li class="info__item">10-е, 11-е классы</li>
+                        <li class="info__item">Филиал: Луговая</li>
+                    </ul>
+                </div>
+                <div class="teachers__card rus">
+                    <div class="teachers__photo">
+                        <img src="asset/source/teachers_photo/gubco_ludmila.png" alt="" class="teachers__img">
+                    </div>
+                    <span class="teachers__name">Стеценко Вера Викторовна</span>
+                    <ul class="info__list">
+                        <li class="info__item">Русский язык</li>
+                        <li class="info__item">Литература</li>
+                        <li class="info__item">ЕГЭ</li>
+                        <li class="info__item">9-е, 11-е классы</li>
+                        <li class="info__item">Филиал: Луговая</li>
+                    </ul>
+                </div>
+                <div class="teachers__card rus">
+                    <div class="teachers__photo">
+                        <img src="asset/source/teachers_photo/hil_tatiana.jpeg" alt="" class="teachers__img">
+                    </div>
+                    <span class="teachers__name">Хиль Татьяна Анатольевна</span>
+                    <ul class="info__list">
+                        <li class="info__item">Учитель высшей категории</li>
+                        <li class="info__item">Русский язык</li>
+                        <li class="info__item">ЕГЭ</li>
+                        <li class="info__item">ОГЭ</li>
+                        <li class="info__item">9-е, 10-е, 11-е классы</li>
+                        <li class="info__item">Филиал: Тихая, Снеговая падь, Луговая</li>
+                    </ul>
+                </div>
+                <div class="teachers__card rus">
+                    <div class="teachers__photo">
+                        <img src="asset/source/teachers_photo/cibina_inna.png" alt="" class="teachers__img">
+                    </div>
+                    <span class="teachers__name">Цибина Инна Николаевна</span>
+                    <ul class="info__list">
+                        <li class="info__item">Учитель высшей квалификационной категории</li>
+                        <li class="info__item">Русский язык</li>
+                        <li class="info__item">ОГЭ</li>
+                        <li class="info__item">9-е, 10-е, 11-е классы</li>
+                        <li class="info__item">Филиал: Тихая</li>
+                    </ul>
+                </div>
+                <div class="teachers__card rus">
+                    <div class="teachers__photo">
+                        <img src="asset/source/teachers_photo/gubco_ludmila.png" alt="" class="teachers__img">
+                    </div>
+                    <span class="teachers__name">Чеботова Светлана Юрьевна</span>
+                    <ul class="info__list">
+                        <li class="info__item">Учитель высшей квалификационной категории</li>
+                        <li class="info__item">Русский язык</li>
+                        <li class="info__item">ЕГЭ</li>
+                        <li class="info__item">9-е, 10-е классы</li>
+                        <li class="info__item">Филиал: Луговая</li>
+                    </ul>
+                </div>
+                <div class="teachers__card rus">
+                    <div class="teachers__photo">
+                        <img src="asset/source/teachers_photo/obedina_svetlana.jpeg" alt="" class="teachers__img">
+                    </div>
+                    <span class="teachers__name">Обедина Светлана Валентиновна</span>
+                    <ul class="info__list">
+                        <li class="info__item">Учитель высшей квалификационной категории</li>
+                        <li class="info__item">Русский язык</li>
+                        <li class="info__item">Литература</li>
+                        <li class="info__item">ЕГЭ, ОГЭ</li>
+                        <li class="info__item">9-е, 11-е классы</li>
+                        <li class="info__item">Филиал: Эгершельд, Гоголя</li>
                     </ul>
                 </div>
 
@@ -215,7 +321,7 @@
 </main>
 
 <footer class="footer">
-    <div class="wrapper">
+    <div class="container">
         <nav class="footer_nav">
             <div class="footer_logo">
                 <img src="asset/source/img/footer_img.png" alt="" class="footer_logo_img">
@@ -321,5 +427,6 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
 <script src="asset/js/script.js"></script>
+<script src="asset/js/teachers-filter.js"></script>
 </body>
 </html>
