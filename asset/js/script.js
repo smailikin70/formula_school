@@ -11,11 +11,6 @@ const swiper = new Swiper('.swiper', {
 
 });
 
-if (document.documentElement.clientWidht < 1150){
-    const swiper, {
-        slidesPerView: 1,
-    }
-},
 
 new Accordion('.accordion-container');
 
