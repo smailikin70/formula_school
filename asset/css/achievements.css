@@ -36,7 +36,7 @@
 
 @media screen and (max-width: 1310px) {
     .achievements__list {
-        gap: 40px;
+        gap: var(--gap);
     }
 
     .achievement:last-child {
@@ -46,7 +46,7 @@
 
 @media screen and (max-width: 1054px) {
     .achievements__list {
-        gap: 20px;
+        gap: var(--gap);
     }
 
     .achievement__value {
@@ -63,7 +63,6 @@
 @media screen and (max-width: 670px) {
     .achievements__list {
         flex-direction: column;
-        gap: 40px;
     }
 
     .achievement {

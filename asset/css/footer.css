@@ -17,7 +17,7 @@
     flex-direction: column;
     justify-content: left;
     align-items: flex-start;
-    gap: 12px;
+    gap: var(--gap);
     margin: 0;
     padding: 0;
 }
@@ -53,5 +53,5 @@
 .with_svg {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: var(--gap);
 }

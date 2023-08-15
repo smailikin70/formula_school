@@ -4,14 +4,14 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 30px;
+    gap: var(--gap);
 }
 
 .about__banner {
     overflow: hidden;
     grid-column-start: 1;
     grid-column: 1 / span 2;
-    border-radius: 25px;
+    border-radius: calc(var(--border-radius) / 2);
 }
 
 .about__img {
@@ -26,8 +26,8 @@
     align-items: start;
     flex-direction: column;
     border: 4px var(--primary-50) solid;
-    border-radius: 25px;
-    gap: 10px;
+    border-radius: calc(var(--border-radius) / 2);
+    gap: var(--gap);
 }
 
 .about-card__step {
@@ -68,7 +68,6 @@
 @media screen and (max-width: 1310px) {
     .about__content {
         grid-template-columns: repeat(2, 1fr);
-        gap: 16px;
     }
 
     .about__banner {

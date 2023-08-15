@@ -16,10 +16,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'A B''A C';
-    gap: 25px;
+    gap: var(--gap);
     padding: 50px;
     background-color: var(--primary-100);
-    border-radius: 25px;
+    border-radius: calc(var(--border-radius) / 2);
 }
 
 .teachers__photo {
@@ -28,11 +28,12 @@
     justify-content: center;
     align-items: flex-end;
     background-color: #B9ABFF;
-    border-radius: 25px;
+    border-radius: calc(var(--border-radius) / 2);
 }
 
 .teachers__img {
-    width: 100%;
+    /*width: 100%;*/
+    height: 100%;
     object-fit: contain;
 }
 
@@ -54,14 +55,14 @@
     flex-direction: column;
     justify-content: right;
     align-items: start;
-    gap: 15px;
+    gap: var(--gap);
 }
 
 .info__item {
     width: 100%;
     padding: 10px 20px;
     background-color: var(--yellow);
-    border-radius: 25px;
+    border-radius: calc(var(--border-radius) / 2);
 }
 
 .teachers__btn{

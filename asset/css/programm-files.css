@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 60px;
+    gap: var(--gap);
 }
 
 .file__download {
@@ -12,5 +12,5 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 25px;
+    gap: var(--gap);
 }

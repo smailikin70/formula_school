@@ -1,6 +1,6 @@
 .form__content {
     background-color: var(--primary-100);
-    border-radius: 25px;
+    border-radius: calc(var(--border-radius) / 2);
     padding: 90px 60px;
     display: grid;
     grid-template-columns: 0.8fr 1fr;
@@ -11,7 +11,7 @@
 
 .yallow__text {
     background-color: var(--yellow);
-    border-radius: 25px;
+    border-radius: calc(var(--border-radius) / 2);
     padding: 2px 5px;
     color: var(--text-black);
     white-space: nowrap;
@@ -30,13 +30,13 @@
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
-    gap: 14px;
+    gap: var(--gap);
 }
 
 .input {
     width: 100%;
     padding: 20px 30px;
-    border-radius: 50px;
+    border-radius: calc(var(--border-radius) / 2);
     background-color: #fff;
     font-size: var(--text-base);
     font-style: normal;
@@ -48,7 +48,7 @@
 
 .form__btn {
     display: flex;
-    gap: 10px;
+    gap: var(--gap);
     width: 100%;
     background-color: var(--yellow);
 }
@@ -58,40 +58,13 @@
     object-fit: cover;
 }
 
-/*----------- POP-UP  ----------*/
-
-.pop-up {
-    display: none;
-    position: fixed;
-    z-index: 500;
-    left: 30%;
-    top: auto;
-    width: 40%;
-    background-color: #F9F9F9;
-    border-radius: 25px;
-    box-shadow: 1px 1px 20px #333333;
-    .pop-up__form{
-        display: flex;
-        flex-direction: column;
-        gap: 14px;
-        padding: 60px 40px;
+@media screen and (max-width: 1350px) {
+    .form__content {
+        padding: 25px 35px;
     }
 
-    .pop-up__title{
-        font-size: var(--text-2xl);
-        font-style: normal;
-        font-weight: 700;
-        line-height: 129.5%;
-    }
-
-    .pop-up__form__decription{
-        font-size: var(--text-base);
-        font-style: normal;
-        font-weight: 500;
-        line-height: 150%;
+    .input{
+        padding: 10px 15px;
     }
 }
 
-.pop-up__active{
-    display: block;
-}

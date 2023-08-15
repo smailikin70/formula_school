@@ -1,14 +1,14 @@
 .hello-screen {
     display: grid;
     grid-template-columns: 3fr 5fr;
-    gap: 33px;
+    gap: var(--gap);
     align-items: center;
     padding: 58px 80px;
     background: url('../source/img/banner_bg-1.svg') left bottom no-repeat,
                 url("../source/img/banner_bg-2.svg") right bottom no-repeat,
                 url("../source/img/banner_bg-3.svg") right top no-repeat;
     background-color: var(--primary-100);
-    border-radius: 50px;
+    border-radius: var(--border-radius);
     margin-bottom: 50px;
 }
 
@@ -40,7 +40,7 @@
 .banner__dec{
     z-index: 6;
     position: absolute;
-    border-radius: 50px;
+    border-radius: var(--border-radius);
     background: #FFF;
     box-shadow: 0 20px 30px 0 rgba(38, 39, 95, 0.05);
 }

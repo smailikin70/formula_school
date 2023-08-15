@@ -7,24 +7,32 @@
     .container {
         max-width: 1024px;
     }
+
+    --gap: 0.7em;
 }
 
-@media screen and (max-width: 1054px) {
+@media screen and (max-width: 1023px) {
     .container {
         max-width: 768px;
     }
+
+    --border-radius: 25px;
 }
 
-@media screen and (max-width: 798px) {
+@media screen and (max-width: 767px) {
     .container {
         max-width: 640px;
     }
+
+    gap: 0.5em;
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 639px) {
     .container {
         max-width: 320px;
     }
+
+    gap: 1em;
 }
 
 .main__setting {

@@ -5,10 +5,13 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
     spaceBetween: 30,
-    slidesPerView: 2,
+    slidesPerView: 1,
     autoplay: 200,
-    autoHeight: false,
-
+    breakpoints: {
+        1024: {
+            slidesPerView: 2,
+        },
+    },
 });
 
 

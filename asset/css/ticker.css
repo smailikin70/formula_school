@@ -1,6 +1,6 @@
 .animation__line {
     display: flex;
-    gap: 50px;
+    gap: var(--gap);
     padding: 5px 0;
     width: 100%;
     background-color: var(--primary-100);

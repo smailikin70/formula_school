@@ -75,12 +75,15 @@
         <a href="https://online.formula-ege.ru/wpm/start/" class="btn btn--secondary header-content__secondary-btn">
             Онлайн-школа
         </a>
-        <button class="btn btn--primary header-content__primary-btn">
+        <a href="javascript:PopUpShow()" class="btn btn--primary header-content__primary-btn">
             Запись на очные занятия
+        </a>
+        <button class="burger__btn">
+            <span class="burger__span"></span><span class="burger__span"></span><span class="burger__span"></span>
         </button>
+
     </div>
     <nav class="nav">
-        <div class="bg__nowrap"></div>
         <ul class="container nav__list">
             <li class="nav__item">
                 <button class="nav__link open-list__btn">
@@ -123,7 +126,7 @@
 </header>
 <main class="main">
     <div class="pop-up" id="popup1">
-        <form action="from-requests.php" method="post" class="pop-up__form">
+        <form action="" method="post" class="pop-up__form">
             <div class="pop-up__title">
                 Форма заявки
             </div>
@@ -164,6 +167,8 @@
                           stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </button>
+
+            <a href="javascript:PopUpHide()" class="pop-up__closer">X</a>
         </form>
     </div>
 
@@ -893,7 +898,7 @@
                             <div class="h1__title achievment__white_text">
                                 Узнайте больше о достижениях и успехах образовательного центра «Формула»
                             </div>
-                            <a href="#" class="btn achievment__btn">
+                            <a href="#" class="btn btn--primary achievment__btn">
                                 Узнать
                                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">

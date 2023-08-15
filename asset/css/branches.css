@@ -4,25 +4,25 @@
     grid-template-rows: 1fr;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: var(--gap);
 }
 
 .branch__item {
     height: 100%;
     padding: 22px 37px;
-    border-radius: 25px;
+    border-radius: calc(var(--border-radius) / 2);
     background: rgba(185, 171, 255, 0.15);
 }
 
 .branch__card-title {
     width: 100%;
     padding: 10px 30px;
-    border-radius: 50px 50px 50px 25px;
+    border-radius: calc(var(--border-radius) / 2);
     background-color: var(--primary-100);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: var(--gap);
 }
 
 .card-title__number {
@@ -51,7 +51,7 @@
     display: flex;
     justify-content: left;
     align-items: start;
-    gap: 15px;
+    gap: var(--gap);
     padding-top: 20px;
     padding-left: 80px;
 }
@@ -77,8 +77,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
-    border-radius: 25px;
+    gap: var(--gap);
+    border-radius: calc(var(--border-radius) / 2);
     padding: 125px;
 }
 
