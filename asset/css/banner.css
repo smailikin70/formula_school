@@ -62,3 +62,118 @@
     bottom: 85%;
 }
 
+/* Баннер на странице учителей */
+
+.teacher__banner {
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    gap: 33px;
+    align-items: center;
+    padding: 58px 80px;
+    background-color: var(--primary-100);
+    background-image: url('../source/img/logo_and_sign_2.png');
+    background-position: 90% 45%;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.teacher__banner__title {
+    margin-bottom: 22px;
+    font-size: 48px;
+}
+
+.teacher__banner__descr {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.teacher__banner__photo {
+    width: 100%;
+    height: 140%;
+    position: relative;
+    background: url('../source/img/logo_teacher_2.png') 0 no-repeat,
+    url('../source/img/logo_teacher_3.png') 45% no-repeat,
+    url('../source/img/logo_teacher_1.png') 100% no-repeat;
+    background-size: contain;
+}
+
+@media screen and (max-width: 1310px) {
+    .teacher__banner__photo {
+        height: 150%;
+    }
+    .teacher__banner__title {
+        font-size: 38px;
+    }
+
+    .teacher__banner__descr {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 1054px) {
+    .teacher__banner {
+        gap: 25px;
+        padding: 45px 70px;
+    }
+    .teacher__banner__photo {
+        width: 120%;
+        height: 160%;
+    }
+    .teacher__banner__title {
+        font-size: 32px;
+    }
+
+    .teacher__banner__descr {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 798px) {
+    .teacher__banner {
+        gap: 15px;
+        grid-template-columns: 3fr 6fr;
+        padding: 40px 50px;
+        margin-bottom: 20px;
+    }
+    .teacher__banner__photo {
+        width: 130%;
+        height: 170%;
+    }
+    .teacher__banner__title {
+        font-size: 28px;
+    }
+
+    .teacher__banner__descr {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .teacher__banner {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 25px 30px;
+        border-radius: 25px;
+        background-position: 85% 40%;
+    }
+    .teacher__banner__photo {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 15px;
+        background-color: #B9ABFF;
+        border-radius: 25px;
+    }
+    .teacher__banner__title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .teacher__banner__descr {
+        font-size: 16px;
+    }
+}
+
+
+
