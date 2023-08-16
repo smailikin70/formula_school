@@ -4,15 +4,17 @@ const swiper = new Swiper('.swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    spaceBetween: 30,
+    spaceBetween: 15,
     slidesPerView: 1,
     autoplay: 200,
     breakpoints: {
-        1024: {
+        1020: {
             slidesPerView: 2,
+            spaceBetween: 30,
         },
     },
 });
+
 
 
 new Accordion('.accordion-container');
@@ -51,4 +53,16 @@ function PopUpShow() {
 
 function PopUpHide() {
     $("#popup1").hide();
+}
+
+$(document).ready(function () {
+    burgerHide();
+});
+
+function burgerShow() {
+    $("#burger").show();
+}
+
+function burgerHide() {
+    $("#burger").hide();
 }

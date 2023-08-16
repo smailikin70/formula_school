@@ -16,6 +16,7 @@
 .logo__btn {
     position: absolute;
     max-width: 280px;
+    top: 0;
     left: 0;
     object-fit: contain;
 }
@@ -54,8 +55,14 @@
 
 @media screen and (max-width: 780px) {
 
+    .header__content{
+        padding-top: 90px;
+        justify-content: space-around;
+    }
+
     .header-content__tel{
         display: none;
     }
     
 }
+

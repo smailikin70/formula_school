@@ -14,3 +14,13 @@
     text-align: center;
     gap: var(--gap);
 }
+
+@media screen and (max-width: 450px){
+    .files__list {
+        flex-wrap: wrap;
+    }
+
+    .files__item{
+        width: 29%;
+    }
+}

@@ -6,7 +6,7 @@
     grid-template-columns: 0.8fr 1fr;
     align-items: center;
     justify-content: space-between;
-    gap: 132px;
+    gap: var(--gap);
 }
 
 .yallow__text {
@@ -66,5 +66,14 @@
     .input{
         padding: 10px 15px;
     }
+}
+
+@media screen and (max-width: 700px) {
+    .form__content{
+        display: block;
+    }
+.form__photo{
+    display: none;
+}
 }
 

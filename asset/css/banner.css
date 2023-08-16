@@ -5,12 +5,13 @@
     align-items: center;
     padding: 58px 80px;
     background: url('../source/img/banner_bg-1.svg') left bottom no-repeat,
-                url("../source/img/banner_bg-2.svg") right bottom no-repeat,
-                url("../source/img/banner_bg-3.svg") right top no-repeat;
+    url("../source/img/banner_bg-2.svg") right bottom no-repeat,
+    url("../source/img/banner_bg-3.svg") right top no-repeat;
     background-color: var(--primary-100);
     border-radius: var(--border-radius);
     margin-bottom: 50px;
 }
+
 
 .hello__title {
     margin-bottom: 22px;
@@ -37,7 +38,7 @@
     object-fit: cover;
 }
 
-.banner__dec{
+.banner__dec {
     z-index: 6;
     position: absolute;
     border-radius: var(--border-radius);
@@ -45,19 +46,19 @@
     box-shadow: 0 20px 30px 0 rgba(38, 39, 95, 0.05);
 }
 
-.banner__dec-1{
+.banner__dec-1 {
     padding: 10px;
     left: -14%;
     bottom: 5%;
 }
 
-.banner__dec-2{
+.banner__dec-2 {
     border-radius: 100px;
     left: 93%;
     bottom: 5%;
 }
 
-.banner__dec-3{
+.banner__dec-3 {
     left: 83%;
     bottom: 85%;
 }
@@ -102,6 +103,7 @@
     .teacher__banner__photo {
         height: 150%;
     }
+
     .teacher__banner__title {
         font-size: 38px;
     }
@@ -112,14 +114,21 @@
 }
 
 @media screen and (max-width: 1054px) {
+
+    .hello-screen {
+        padding: 50px;
+    }
+
     .teacher__banner {
         gap: 25px;
         padding: 45px 70px;
     }
+
     .teacher__banner__photo {
         width: 120%;
         height: 160%;
     }
+
     .teacher__banner__title {
         font-size: 32px;
     }
@@ -127,19 +136,29 @@
     .teacher__banner__descr {
         font-size: 22px;
     }
+
+    .banner__dec-3{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 798px) {
+    .purple__wrapper{
+        padding: 25px;
+    }
+
     .teacher__banner {
         gap: 15px;
         grid-template-columns: 3fr 6fr;
         padding: 40px 50px;
         margin-bottom: 20px;
     }
+
     .teacher__banner__photo {
         width: 130%;
         height: 170%;
     }
+
     .teacher__banner__title {
         font-size: 28px;
     }
@@ -158,6 +177,7 @@
         border-radius: 25px;
         background-position: 85% 40%;
     }
+
     .teacher__banner__photo {
         width: 100%;
         height: 200px;
@@ -165,6 +185,7 @@
         background-color: #B9ABFF;
         border-radius: 25px;
     }
+
     .teacher__banner__title {
         font-size: 24px;
         margin-bottom: 15px;

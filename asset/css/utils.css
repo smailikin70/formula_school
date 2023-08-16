@@ -3,37 +3,6 @@
     margin: 0 auto;
 }
 
-@media screen and (max-width: 1310px) {
-    .container {
-        max-width: 1024px;
-    }
-
-    --gap: 0.7em;
-}
-
-@media screen and (max-width: 1023px) {
-    .container {
-        max-width: 768px;
-    }
-
-    --border-radius: 25px;
-}
-
-@media screen and (max-width: 767px) {
-    .container {
-        max-width: 640px;
-    }
-
-    gap: 0.5em;
-}
-
-@media screen and (max-width: 639px) {
-    .container {
-        max-width: 320px;
-    }
-
-    gap: 1em;
-}
 
 .main__setting {
     font-family: 'Manrope', sans-serif;
@@ -54,7 +23,7 @@
 .purple__wrapper {
     width: 100%;
     padding: 100px;
-    border-radius: 50px;
+    border-radius: var(--border-radius);
     background-color: var(--primary-100);
     margin: 0 auto 100px;
 }
@@ -134,4 +103,53 @@ button:focus {
 
 .purple__text {
     color: var(--primary-100);
+}
+
+
+
+@media screen and (max-width: 1310px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    :root {
+        --gap: 0.7em;
+    }
+    .section__title{
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .container {
+        max-width: 768px;
+    }
+
+    --border-radius: 25px;
+
+    .swiper-button-next:after, .swiper-button-prev:after{
+        font-size: var(--text-2xl);
+    }
+
+
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 640px;
+    }
+
+    :root {
+        gap: 0.5em;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .container {
+        max-width: 320px;
+    }
+
+    :root {
+        gap: 1em;
+    }
 }

@@ -67,3 +67,17 @@
 .achievment__white_text {
     font-size: var(--text-2xl);
 }
+
+@media screen and (max-width: 1100px) {
+    .achievment__card{
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .achievment__list{
+        display: flex;
+        flex-direction: column;
+    }
+}
+}

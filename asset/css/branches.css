@@ -1,6 +1,6 @@
 .branch__list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr auto;
     grid-template-rows: 1fr;
     justify-content: center;
     align-items: center;
@@ -9,9 +9,12 @@
 
 .branch__item {
     height: 100%;
-    padding: 22px 37px;
     border-radius: calc(var(--border-radius) / 2);
     background: rgba(185, 171, 255, 0.15);
+}
+
+.branch__card{
+    padding: 22px 37px;
 }
 
 .branch__card-title {
@@ -72,6 +75,7 @@
 
 .branch__button {
     width: 100%;
+    height: 100%;
     background-color: var(--yellow);
     display: flex;
     flex-direction: column;
@@ -79,7 +83,6 @@
     justify-content: center;
     gap: var(--gap);
     border-radius: calc(var(--border-radius) / 2);
-    padding: 125px;
 }
 
 .branch__list-pin {
@@ -89,9 +92,24 @@
 }
 
 .branch__button__name {
+    padding: 10px;
+    white-space: normal;
     color: var(--text-black);
     text-align: center;
     font-size: var(--text-base);
     font-weight: 500;
     line-height: 150%;
+}
+
+@media screen and (max-width: 900px) {
+    .branch__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .branch__item{
+            width: 100%;
+        }
+    }
 }
