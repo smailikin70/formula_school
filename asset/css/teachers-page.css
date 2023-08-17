@@ -43,6 +43,10 @@
     display: none;
 }
 
+.teachers__section .teachers__photo {
+    overflow: hidden;
+}
+
 .teachers__section .teachers__card.show {
     display: grid;
 }
