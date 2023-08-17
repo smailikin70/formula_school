@@ -1053,26 +1053,26 @@
                         чтобы подобрать
                         <span class="purple__text yallow__text"> программу именно для тебя</span>
                     </div>
-                    <form action="" class="form__display">
-                        <input type="text" name="firstname" class="input input__name" placeholder="Ваше имя">
-                        <input type="tel" name="phone__number" class="input input__phone" placeholder="Номер телефона">
-                        <input type="email" name="email" class="input input__email" placeholder="Email">
-                        <select id="Program" name="" onchange="ChangeProgram" class="input input__program">
+                    <form action="/asset/actions/form.php" method="POST" class="form__display" id="user__form">
+                        <input type="text" name="firstname" required class="input input__name" placeholder="Ваше имя">
+                        <input type="tel" name="phone__number" required class="input input__phone" placeholder="Номер телефона">
+                        <input type="email" name="email" required class="input input__email" placeholder="Email">
+                        <select id="Program" name="program" onchange="ChangeProgram" class="input input__program">
                             <option value="" class="input__prog__item">Подготовка к ЕГЭ</option>
                             <option value="" class="input__prog__item">Подготовка к ОГЭ</option>
                             <option value="" class="input__prog__item">Подготовка к олимпиадам</option>
                         </select>
-                        <select id="Lesson" name="" onchange="ChangeLesson" class="input input__lesson">
+                        <select id="Lesson" name="lesson" onchange="ChangeLesson" class="input input__lesson">
                             <option value="" class="input__prog__item">Русский язык</option>
                             <option value="" class="input__prog__item">Математика</option>
                             <option value="" class="input__prog__item">Информатика</option>
                         </select>
-                        <select id="class-age" name="" onchange="ChangeClass" class="input input__class">
+                        <select id="class-age" name="class" onchange="ChangeClass" class="input input__class">
                             <option value="" class="input__prog__item">7 класс</option>
                             <option value="" class="input__prog__item">8 класс</option>
                             <option value="" class="input__prog__item">9 класс</option>
                         </select>
-                        <select id="address" name="" onchange="ChangeAddress" class="input input__address">
+                        <select id="address" name="address" onchange="ChangeAddress" class="input input__address">
                             <option value="" class="input__prog__item">Онлайн</option>
                             <option value="" class="input__prog__item">Луговая, 30</option>
                             <option value="" class="input__prog__item">Проспект 100 лет Владивостоку, 103</option>
@@ -1089,6 +1089,7 @@
                             </svg>
                         </button>
                     </form>
+                    <div id="user__form__response"></div>
                 </div>
                 <div class="form__photo">
                     <img src="asset/source/img/form__img.png" alt="" class="input form__img">
@@ -1205,5 +1206,6 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
 <script src="asset/js/script.js"></script>
+<script src="asset/js/response.js"></script>
 </body>
 </html>
