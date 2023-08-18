@@ -75,7 +75,9 @@
     background-color: var(--orange);
 }
 
+
 .price__display {
+    display: none;
     grid-area: B;
     width: 100%;
     border-radius: calc(var(--border-radius) / 2);
@@ -87,13 +89,24 @@
     color: var(--text-white);
 }
 
+
+.price__display__active{
+    display: block;
+}
+
 .content__display {
+    display: none;
     grid-area: C;
     height: 100%;
     padding: 55px;
     background-color: #fff;
     border-radius: calc(var(--border-radius) / 2);
 }
+
+.content__display__active{
+    display: block;
+}
+
 
 .content__title {
     max-width: 40%;

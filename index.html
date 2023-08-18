@@ -78,9 +78,9 @@
         <a href="javascript:PopUpShow()" class="btn btn--primary header-content__primary-btn">
             Запись на очные занятия
         </a>
-        <a href="javascript:burgerShow()" class="burger__btn">
+        <button class="burger__btn">
             <span class="burger__span"></span><span class="burger__span"></span><span class="burger__span"></span>
-        </a>
+        </button>
 
     </div>
     <nav class="nav" id="burger">
@@ -145,14 +145,22 @@
                 <option value="" class="input__prog__item">Русский язык</option>
                 <option value="" class="input__prog__item">Математика</option>
                 <option value="" class="input__prog__item">Информатика</option>
+                <option value="" class="input__prog__item">Химия</option>
+                <option value="" class="input__prog__item">Биология</option>
+                <option value="" class="input__prog__item">Обществознание</option>
+                <option value="" class="input__prog__item">История</option>
+                <option value="" class="input__prog__item">Литература</option>
+                <option value="" class="input__prog__item">География</option>
+                <option value="" class="input__prog__item">Физика</option>
             </select>
             <select id="class-age" name="" onchange="ChangeClass" class="input input__class">
                 <option value="" class="input__prog__item">7 класс</option>
                 <option value="" class="input__prog__item">8 класс</option>
                 <option value="" class="input__prog__item">9 класс</option>
+                <option value="" class="input__prog__item">10 класс</option>
+                <option value="" class="input__prog__item">11 класс</option>
             </select>
             <select id="address" name="" onchange="ChangeAddress" class="input input__address">
-                <option value="" class="input__prog__item">Онлайн</option>
                 <option value="" class="input__prog__item">Луговая, 30</option>
                 <option value="" class="input__prog__item">Проспект 100 лет Владивостоку, 103</option>
             </select>
@@ -182,9 +190,9 @@
                 <h2 class="h1__descr hello__descr">
                     С 2012 года готовим к ЕГЭ, ОГЭ, олимпиадам по математике и физике при поддержке МФТИ
                 </h2>
-                <button class="btn hello__button">
+                <a href="javascript:PopUpShow()" class="btn hello__button">
                     Выбрать курс
-                </button>
+                </a>
             </div>
             <div class="hello__photo">
                 <img src="asset/source/img/promo_img.png" alt="Ученики Формулы" class="hello__img">
@@ -417,13 +425,13 @@
                     <button class="btn study-program__btn">Английский язык</button>
                 </div>
 
-                <div class="price__display">
+                <div class="price__display price__display__active">
                     Стоимость подготовки
                     к ЕГЭ и ОГЭ:
                     <br>
                     350 Р/ак.час
                 </div>
-                <div class="content__display">
+                <div class="content__display content__display__active">
                     <div class="content__title">
                         Подготовка к ЕГЭ по
                         <span class="purple__text">русскому языку</span>
@@ -481,6 +489,7 @@
             </div>
         </div>
     </div>
+
     <div class="container">
         <div class="section teachers">
             <h3 class="section__title teachers__title">
@@ -814,6 +823,7 @@
             </div>
         </div>
     </div>
+
     <div class="purple__wrapper go-to-pop-up">
         <div class="container">
             <div class="h1__title go-to-pop-up__title">
@@ -831,6 +841,7 @@
             </button>
         </div>
     </div>
+
     <div class="container">
         <div class="section school__achievments">
             <h3 class="section__title achievments__title">
