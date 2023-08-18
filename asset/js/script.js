@@ -67,7 +67,7 @@ const tabs = document.querySelectorAll(".study-program__btn");
 // получаем массив всех блоков с содержимым вкладок
 const contents = document.querySelectorAll(".price__display");
 
-const contents = document.querySelectorAll(".content__display");
+const contents_2 = document.querySelectorAll(".content__display");
 
 // запускаем цикл для каждой вкладки и добавляем на неё событие
 for (let i = 0; i < tabs.length; i++) {
@@ -88,6 +88,7 @@ for (let i = 0; i < tabs.length; i++) {
         }
         // добавляем активный класс
         contents[i].classList.add("study-program__btn__active");
+        contents_2[i].classList.add("price__display__active");
 
     });
 }
