@@ -55,14 +55,8 @@ function PopUpHide() {
     $("#popup1").hide();
 }
 
-$(document).ready(function () {
-    burgerHide();
-});
-
-function burgerShow() {
-    $("#burger").show();
-}
-
-function burgerHide() {
-    $("#burger").hide();
-}
+let menuBtn = document.querySelector('.burger__btn');
+let menu = document.querySelector('.nav__list');
+menuBtn.addEventListener('click', function(){
+    menu.classList.toggle('nav__active');
+})

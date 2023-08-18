@@ -3,6 +3,8 @@
     background: rgba(185, 171, 255, 0.15);
 }
 
+
+
 .nav__list {
     display: flex;
     justify-content: space-between;
@@ -57,7 +59,7 @@
         }
     }
 
-    .nav__list__active {
+    .nav__active{
         display: flex;
     }
 }
