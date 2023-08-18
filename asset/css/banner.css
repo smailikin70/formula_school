@@ -99,6 +99,31 @@
     background-size: contain;
 }
 
+/* Баннер на странице достижений */
+
+.achievement__banner {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 33px;
+    align-items: center;
+    padding: 58px 80px;
+    background-color: var(--primary-100);
+    background-image: url('../source/img/logo_and_sign_2.png');
+    background-position: 90% 45%;
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+
+.achievement__banner__title {
+    margin-bottom: 22px;
+    font-size: 48px;
+}
+
+.achievement__banner__descr {
+    font-size: 32px;
+    font-weight: 400;
+}
+
 @media screen and (max-width: 1310px) {
     .teacher__banner__photo {
         height: 150%;
@@ -111,6 +136,15 @@
     .teacher__banner__descr {
         font-size: 28px;
     }
+
+    .achievement__banner__title {
+        font-size: 38px;
+    }
+
+    .achievement__banner__descr {
+        font-size: 28px;
+    }
+
 }
 
 @media screen and (max-width: 1054px) {
@@ -137,13 +171,21 @@
         font-size: 22px;
     }
 
-    .banner__dec-3{
+    .achievement__banner__title {
+        font-size: 32px;
+    }
+
+    .achievement__banner__descr {
+        font-size: 22px;
+    }
+
+    .banner__dec-3 {
         display: none;
     }
 }
 
 @media screen and (max-width: 798px) {
-    .purple__wrapper{
+    .purple__wrapper {
         padding: 25px;
     }
 
@@ -164,6 +206,21 @@
     }
 
     .teacher__banner__descr {
+        font-size: 20px;
+    }
+
+    .achievement__banner {
+        gap: 15px;
+        grid-template-columns: 4fr 1fr;
+        padding: 40px 50px;
+        margin-bottom: 20px;
+    }
+
+    .achievement__banner__title {
+        font-size: 28px;
+    }
+
+    .achievement__banner__descr {
         font-size: 20px;
     }
 }
@@ -197,6 +254,23 @@
     }
 
     .teacher__banner__descr {
+        font-size: 16px;
+    }
+
+    .achievement__banner {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 25px 30px;
+        border-radius: 25px;
+        background-position: 85% 40%;
+    }
+
+    .achievement__banner__title {
+        font-size: 24px;
+    }
+
+    .achievement__banner__descr {
         font-size: 16px;
     }
 }

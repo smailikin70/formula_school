@@ -1,3 +1,19 @@
+.achievement__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: row;
+    gap: 24px;
+}
+
+.achievement__title {
+
+}
+
+.achievement-stats:first-child {
+    grid-row: span 2;
+}
+
 .success__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -40,4 +56,56 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+}
+
+.year__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.year__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 76px;
+    padding: 20px 40px 20px 40px;
+    border: 3px solid var(--yellow);
+    border-radius: 25px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.year__item:hover {
+    background-color: var(--yellow);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1310px) {
+
+}
+@media screen and (max-width: 1054px) {
+    .year__item {
+        height: 54px;
+        padding: 15px 25px 15px 25px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        border: 2px solid #9A4EFF;
+    }
+}
+
+@media screen and (max-width: 798px) {
+    .year__item {
+        height: 50px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .year__item {
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
 }
