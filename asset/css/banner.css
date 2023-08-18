@@ -169,6 +169,11 @@
 }
 
 @media screen and (max-width: 670px) {
+
+    .hello-screen{
+        border-radius: 25px;
+    }
+
     .teacher__banner {
         display: flex;
         flex-direction: column-reverse;
