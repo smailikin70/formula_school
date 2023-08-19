@@ -200,3 +200,13 @@
         margin-bottom: 5px;
     }
 }
+
+.feedback__content {
+    display: grid;
+    grid-template-areas:
+    "photo1       card1         card2        card3"
+    "photo1       card1         card4        card4"
+    "card5        card5         card6        card7"
+    "photo2      photo2         photo3        link";
+    gap: 25px;
+}
