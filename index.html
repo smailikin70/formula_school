@@ -1069,24 +1069,39 @@
                         <input type="tel" name="phone__number" required class="input input__phone" placeholder="Номер телефона">
                         <input type="email" name="email" required class="input input__email" placeholder="Email">
                         <select id="Program" name="program" onchange="ChangeProgram" class="input input__program">
-                            <option value="" class="input__prog__item">Подготовка к ЕГЭ</option>
-                            <option value="" class="input__prog__item">Подготовка к ОГЭ</option>
-                            <option value="" class="input__prog__item">Подготовка к олимпиадам</option>
+                            <option value="ЕГЭ" class="input__prog__item">Подготовка к ЕГЭ</option>
+                            <option value="ОГЭ" class="input__prog__item">Подготовка к ОГЭ</option>
+                            <option value="Олимпиады" class="input__prog__item">Подготовка к олимпиадам</option>
                         </select>
                         <select id="Lesson" name="lesson" onchange="ChangeLesson" class="input input__lesson">
-                            <option value="" class="input__prog__item">Русский язык</option>
-                            <option value="" class="input__prog__item">Математика</option>
-                            <option value="" class="input__prog__item">Информатика</option>
+                            <option value="Русский язык" class="input__prog__item">Русский язык</option>
+                            <option value="Математика" class="input__prog__item">Математика</option>
+                            <option value="Информатика" class="input__prog__item">Информатика</option>
+                            <option value="Химия" class="input__prog__item">Химия</option>
+                            <option value="Биология" class="input__prog__item">Биология</option>
+                            <option value="Обществознание" class="input__prog__item">Обществознание</option>
+                            <option value="История" class="input__prog__item">История</option>
+                            <option value="Литература" class="input__prog__item">Литература</option>
+                            <option value="География" class="input__prog__item">География</option>
+                            <option value="Физика" class="input__prog__item">Физика</option>
                         </select>
                         <select id="class-age" name="class" onchange="ChangeClass" class="input input__class">
-                            <option value="" class="input__prog__item">7 класс</option>
-                            <option value="" class="input__prog__item">8 класс</option>
-                            <option value="" class="input__prog__item">9 класс</option>
+                            <option value="7" class="input__prog__item">7 класс</option>
+                            <option value="8" class="input__prog__item">8 класс</option>
+                            <option value="9" class="input__prog__item">9 класс</option>
+                            <option value="10" class="input__prog__item">10 класс</option>
+                            <option value="11" class="input__prog__item">11 класс</option>
                         </select>
                         <select id="address" name="address" onchange="ChangeAddress" class="input input__address">
-                            <option value="" class="input__prog__item">Онлайн</option>
-                            <option value="" class="input__prog__item">Луговая, 30</option>
-                            <option value="" class="input__prog__item">Проспект 100 лет Владивостоку, 103</option>
+                            <option value="Луговая, 30" class="input__prog__item">р-н Луговая: ул. Луговая 30</option>
+                            <option value="Проспект 100 лет Владивостоку, 103" class="input__prog__item">р-н Вторая речка: Проспект 100 лет Владивостоку 103</option>
+                            <option value="Красного Знамени 59" class="input__prog__item">р-н Гоголя: Красного Знамени 59</option>
+                            <option value="Анны Щетинина 1" class="input__prog__item">р-н Снеговая падь: Анны Щетинина 1</option>
+                            <option value="ул. Крыгина 77" class="input__prog__item">р-н Эгершельд: ул. Крыгина 77</option>
+                            <option value="Добролюбова 20" class="input__prog__item">район Тихая: Добролюбова 20</option>
+                            <option value="Черемуховая 7" class="input__prog__item">р-н Чуркин: Черемуховая 7</option>
+                            <option value="Ивановская 6/4" class="input__prog__item">Ивановская 6/4</option>
+                            <option value="г. Находка, Восточный пр-кт 4-А" class="input__prog__item">г. Находка: мкр.Врангель, Восточный пр-кт 4-А</option>
                         </select>
 
                         <button type="submit" class="btn form__btn">
