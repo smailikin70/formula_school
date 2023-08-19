@@ -3,7 +3,6 @@
     margin: 0 auto;
 }
 
-
 .main__setting {
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
@@ -106,16 +105,17 @@ button:focus {
 }
 
 
-
 @media screen and (max-width: 1310px) {
     .container {
         max-width: 1024px;
+        margin: 0 auto;
     }
 
     :root {
         --gap: 0.7em;
     }
-    .section__title{
+
+    .section__title {
         margin-left: 25px;
     }
 }
@@ -123,11 +123,12 @@ button:focus {
 @media screen and (max-width: 1023px) {
     .container {
         max-width: 768px;
+        margin: 0 auto;
     }
 
     --border-radius: 25px;
 
-    .swiper-button-next:after, .swiper-button-prev:after{
+    .swiper-button-next:after, .swiper-button-prev:after {
         font-size: var(--text-2xl);
     }
 
@@ -137,6 +138,7 @@ button:focus {
 @media screen and (max-width: 767px) {
     .container {
         max-width: 640px;
+        margin: 0 auto;
     }
 
     :root {
@@ -147,6 +149,7 @@ button:focus {
 @media screen and (max-width: 639px) {
     .container {
         max-width: 320px;
+        margin: 0 auto;
     }
 
     :root {

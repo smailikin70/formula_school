@@ -72,79 +72,23 @@ const contents_2 = document.querySelectorAll(".content__display");
 // запускаем цикл для каждой вкладки и добавляем на неё событие
 for (let i = 0; i < tabs.length; i++) {
     tabs[i].addEventListener("click", ( event ) => {
-        tabs.forEach((btn) => btn.classList.remove("study-program__btn__active"));
-        tabs[i].classList.add("study-program__btn__active");
 
-        const filterValue = tabs[i].getAttribute("data-filter");
-
-        contents_2.forEach((item) => {
-            if (item.classList.contains(filterValue)) {
-                item.classList.add("content__display__active");
-            } else {
-                item.classList.remove("content__display__active");
-            }
-        });
-
-        // // сначала нам нужно удалить активный класс именно с вкладок
-        // let tabsChildren = event.target.parentElement.children;
-        // for (let t = 0; t < tabsChildren.length; t++) {
-        //     tabsChildren[t].classList.remove("price__display__active");
-        //     tabsChildren[t].classList.remove("content__display__active");
-        // }
-        // // добавляем активный класс
-        // tabs[i].classList.add("study-program__btn");
-        // // теперь нужно удалить активный класс с блоков содержимого вкладок
-        // let tabContentChildren = event.target.parentElement.nextElementSibling.children;
-        // for (let c = 0; c < tabContentChildren.length; c++) {
-        //     tabContentChildren[c].classList.remove("study-program__btn__active");
-        // }
-        // // добавляем активный класс
-        // contents[i].classList.add("study-content__display__active");
-        // contents_2[i].classList.add("price__display__active");
-
-    });
-}
-
-const additionalTabs = document.querySelectorAll(".additional-program__btn");
-const additionalContents = document.querySelectorAll(".additional__display");
-
-
-for (let i = 0; i < additionalTabs.length; i++) {
-    additionalTabs[i].addEventListener("click", ( event ) => {
-        additionalTabs.forEach((btn) => btn.classList.remove("additional-program__btn__active"));
-        additionalTabs[i].classList.add("additional-program__btn__active");
-
-        const filterValue = additionalTabs[i].getAttribute("data-filter");
-
-        additionalContents.forEach((item) => {
-            if (item.classList.contains(filterValue)) {
-                item.classList.add("additional__display__active");
-            } else {
-                item.classList.remove("additional__display__active");
-            }
-        });
-
-    });
-}
-
-const switcher = document.querySelectorAll(".switch");
-const switchContent = document.querySelectorAll(".buttons__area");
-
-
-for (let i = 0; i < switcher.length; i++) {
-    switcher[i].addEventListener("click", ( event ) => {
-        switcher.forEach((btn) => btn.classList.remove("switch__active"));
-        switcher[i].classList.add("switch__active");
-
-        const filterValue = switcher[i].getAttribute("data-filter");
-
-        switchContent.forEach((item) => {
-            if (item.classList.contains(filterValue)) {
-                item.classList.add("buttons__area__active");
-            } else {
-                item.classList.remove("buttons__area__active");
-            }
-        });
+        // сначала нам нужно удалить активный класс именно с вкладок
+        let tabsChildren = event.target.parentElement.children;
+        for (let t = 0; t < tabsChildren.length; t++) {
+            tabsChildren[t].classList.remove("price__display__active");
+            tabsChildren[t].classList.remove("content__display__active");
+        }
+        // добавляем активный класс
+        tabs[i].classList.add("study-program__btn");
+        // теперь нужно удалить активный класс с блоков содержимого вкладок
+        let tabContentChildren = event.target.parentElement.nextElementSibling.children;
+        for (let c = 0; c < tabContentChildren.length; c++) {
+            tabContentChildren[c].classList.remove("study-program__btn__active");
+        }
+        // добавляем активный класс
+        contents[i].classList.add("study-program__btn__active");
+        contents_2[i].classList.add("price__display__active");
 
     });
 }
