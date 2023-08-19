@@ -23,29 +23,29 @@ function ChangeProgram() {
     const selectElement = document.getElementById('Program');
     const selectedProg = selectElement.value;
     alert('Вы выбрали: ' + selectedProg);
-};
+}
 
 function ChangeLesson() {
     const selectElement = document.getElementById('Lesson');
     const selectedProg = selectElement.value;
     alert('Вы выбрали: ' + selectedProg);
-};
+}
 
 function ChangeClass() {
     const selectElement = document.getElementById('class-age');
     const selectedProg = selectElement.value;
     alert('Вы выбрали: ' + selectedProg);
-};
+}
 
 function ChangeAddress() {
     const selectElement = document.getElementById('address');
     const selectedProg = selectElement.value;
     alert('Вы выбрали: ' + selectedProg);
-};
+}
 
 $(document).ready(function () {
     PopUpHide();
-});
+})
 
 function PopUpShow() {
     $("#popup1").show();

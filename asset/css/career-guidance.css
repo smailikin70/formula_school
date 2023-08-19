@@ -29,7 +29,6 @@
 .pop-up {
     display: none;
     z-index: 500;
-    max-width: 100%;
     background-color: #F9F9F9;
     border-radius: calc(var(--border-radius) / 2);
     box-shadow: 1px 1px 20px #333333;
