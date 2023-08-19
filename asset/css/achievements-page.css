@@ -1,3 +1,133 @@
+.year__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.year__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 76px;
+    padding: 20px 40px 20px 40px;
+    border: 3px solid var(--yellow);
+    border-radius: 25px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.year__item:hover {
+    background-color: var(--yellow);
+    cursor: pointer;
+}
+
+.achievement__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.achievement-best {
+    border-radius: 50%;
+    background-color: rgba(255, 234, 61, 0.15);
+    background-size: 100% 40%;
+}
+
+.achievement-stats {
+    border-radius: 25px;
+    background-color: #FFF;
+    box-shadow: 0px 20px 30px 0px rgba(38, 39, 95, 0.05);
+    padding: 50px 40px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "A B"
+                         "C C";
+    justify-content: space-between;
+}
+
+.achievement-stats__name {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.achievement-stats__info {
+    text-align: right;
+    display: grid;
+    gap: 5px;
+}
+
+.achievement-stats__info__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.achievement-stats__info__item .circle {
+    background-color: var(--yellow);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.achievement-stats__info__item .circle.light {
+    background-color: #FFF8BE;
+}
+
+.achievement-stats.purple .circle.light{
+    background-color: #D0C7FF;
+}
+
+.achievement-stats.purple .circle {
+    background-color: var(--primary-100);
+}
+
+.achievement-stats__list {
+    margin-top: 45px;
+    grid-area: C;
+    display: grid;
+    gap: 25px;
+}
+
+.achievement-stats__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.achievement-stats__item .scale {
+    display: flex;
+    align-items: center;
+}
+
+.achievement-stats__item .scale div {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.achievement-stats__item .scale__left-part {
+    background-color: var(--yellow);
+    border-radius: 10px 0 0 10px;
+}
+
+.achievement-stats__item .scale__right-part {
+    background-color: #FFF8BE;
+    border-radius: 0 10px 10px 0;
+}
+
+.achievement-stats.purple .scale__left-part {
+    background-color: var(--primary-100);
+    color: #FFF
+}
+
+.achievement-stats.purple .scale__right-part {
+    background-color: #D0C7FF;
+}
+
 .success__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -40,4 +170,33 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+}
+
+@media screen and (max-width: 1310px) {
+
+}
+@media screen and (max-width: 1054px) {
+    .year__item {
+        height: 54px;
+        padding: 15px 25px 15px 25px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        border: 2px solid #9A4EFF;
+    }
+}
+
+@media screen and (max-width: 798px) {
+    .year__item {
+        height: 50px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .year__item {
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
 }
