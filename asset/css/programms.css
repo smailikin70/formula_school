@@ -53,12 +53,20 @@
 .buttons__area {
     height: 100%;
     grid-area: A;
-    display: flex;
+    display: none;
     justify-content: left;
     align-items: center;
     align-content: center;
     gap: var(--gap);
     flex-wrap: wrap;
+}
+
+.buttons__area__active {
+    display: flex;
+}
+
+.buttons__area.additional__buttons__area {
+    display: flex;
 }
 
 .study-program__btn {
@@ -135,6 +143,7 @@
 }
 
 .additional__display {
+    display: none;
     width: 100%;
     height: 100%;
     padding: 50px;
@@ -146,6 +155,24 @@
     .content__list {
         margin-bottom: 50px;
     }
+}
+
+.additional__display__active {
+    display: block;
+}
+
+.additional-program__btn {
+    background-color: #fff;
+    border-radius: calc(var(--border-radius) / 2);
+    font-size: var(--text-base);
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 10px;
+}
+
+.additional-program__btn__active {
+    color: var(--text-white);
+    background-color: var(--orange);
 }
 
 .additional-content__btn {
@@ -177,6 +204,10 @@
     }
 
     .study-program__btn{
+        padding: 10px;
+    }
+
+    .additional-program__btn {
         padding: 10px;
     }
 

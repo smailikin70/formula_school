@@ -136,33 +136,40 @@
             <input type="text" name="firstname" class="input input__name" placeholder="Ваше имя">
             <input type="tel" name="phone__number" class="input input__phone" placeholder="Номер телефона">
             <input type="email" name="email" class="input input__email" placeholder="Email">
-            <select id="Program" name="" onchange="ChangeProgram" class="input input__program">
-                <option value="" class="input__prog__item">Подготовка к ЕГЭ</option>
-                <option value="" class="input__prog__item">Подготовка к ОГЭ</option>
-                <option value="" class="input__prog__item">Подготовка к олимпиадам</option>
+            <select id="Program" name="program" onchange="ChangeProgram" class="input input__program">
+                <option value="ЕГЭ" class="input__prog__item">Подготовка к ЕГЭ</option>
+                <option value="ОГЭ" class="input__prog__item">Подготовка к ОГЭ</option>
+                <option value="Олимпиады" class="input__prog__item">Подготовка к олимпиадам</option>
             </select>
-            <select id="Lesson" name="" onchange="ChangeLesson" class="input input__lesson">
-                <option value="" class="input__prog__item">Русский язык</option>
-                <option value="" class="input__prog__item">Математика</option>
-                <option value="" class="input__prog__item">Информатика</option>
-                <option value="" class="input__prog__item">Химия</option>
-                <option value="" class="input__prog__item">Биология</option>
-                <option value="" class="input__prog__item">Обществознание</option>
-                <option value="" class="input__prog__item">История</option>
-                <option value="" class="input__prog__item">Литература</option>
-                <option value="" class="input__prog__item">География</option>
-                <option value="" class="input__prog__item">Физика</option>
+            <select id="Lesson" name="lesson" onchange="ChangeLesson" class="input input__lesson">
+                <option value="Русский язык" class="input__prog__item">Русский язык</option>
+                <option value="Математика" class="input__prog__item">Математика</option>
+                <option value="Информатика" class="input__prog__item">Информатика</option>
+                <option value="Химия" class="input__prog__item">Химия</option>
+                <option value="Биология" class="input__prog__item">Биология</option>
+                <option value="Обществознание" class="input__prog__item">Обществознание</option>
+                <option value="История" class="input__prog__item">История</option>
+                <option value="Литература" class="input__prog__item">Литература</option>
+                <option value="География" class="input__prog__item">География</option>
+                <option value="Физика" class="input__prog__item">Физика</option>
             </select>
-            <select id="class-age" name="" onchange="ChangeClass" class="input input__class">
-                <option value="" class="input__prog__item">7 класс</option>
-                <option value="" class="input__prog__item">8 класс</option>
-                <option value="" class="input__prog__item">9 класс</option>
-                <option value="" class="input__prog__item">10 класс</option>
-                <option value="" class="input__prog__item">11 класс</option>
+            <select id="class-age" name="class" onchange="ChangeClass" class="input input__class">
+                <option value="7" class="input__prog__item">7 класс</option>
+                <option value="8" class="input__prog__item">8 класс</option>
+                <option value="9" class="input__prog__item">9 класс</option>
+                <option value="10" class="input__prog__item">10 класс</option>
+                <option value="11" class="input__prog__item">11 класс</option>
             </select>
             <select id="address" name="" onchange="ChangeAddress" class="input input__address">
-                <option value="" class="input__prog__item">Луговая, 30</option>
-                <option value="" class="input__prog__item">Проспект 100 лет Владивостоку, 103</option>
+                <option value="Луговая, 30" class="input__prog__item">р-н Луговая: ул. Луговая 30</option>
+                <option value="Проспект 100 лет Владивостоку, 103" class="input__prog__item">р-н Вторая речка: Проспект 100 лет Владивостоку 103</option>
+                <option value="Красного Знамени 59" class="input__prog__item">р-н Гоголя: Красного Знамени 59</option>
+                <option value="Анны Щетинина 1" class="input__prog__item">р-н Снеговая падь: Анны Щетинина 1</option>
+                <option value="ул. Крыгина 77" class="input__prog__item">р-н Эгершельд: ул. Крыгина 77</option>
+                <option value="Добролюбова 20" class="input__prog__item">район Тихая: Добролюбова 20</option>
+                <option value="Черемуховая 7" class="input__prog__item">р-н Чуркин: Черемуховая 7</option>
+                <option value="Ивановская 6/4" class="input__prog__item">Ивановская 6/4</option>
+                <option value="г. Находка, Восточный пр-кт 4-А" class="input__prog__item">г. Находка: мкр.Врангель, Восточный пр-кт 4-А</option>
             </select>
 
             <button type="submit" class="btn form__btn">
@@ -406,23 +413,36 @@
                     Обучаем по всем школьным предметам
                 </div>
                 <div class="study-program__main-switcher">
-                    <button class="btn switch switch__active">ЕГЭ</button>
-                    <button class="btn switch">ОГЭ</button>
+                    <button class="btn switch switch__active" data-filter="ege">ЕГЭ</button>
+                    <button class="btn switch" data-filter="oge">ОГЭ</button>
                 </div>
             </div>
             <div class="study-program__main-content">
-                <div class="buttons__area">
-                    <button class="btn study-program__btn study-program__btn__active">Русский язык</button>
-                    <button class="btn study-program__btn">Литература</button>
-                    <button class="btn study-program__btn">Математика</button>
-                    <button class="btn study-program__btn">Обществознание</button>
-                    <button class="btn study-program__btn">История</button>
-                    <button class="btn study-program__btn">География</button>
-                    <button class="btn study-program__btn">Химия</button>
-                    <button class="btn study-program__btn">Биология</button>
-                    <button class="btn study-program__btn">Физика</button>
-                    <button class="btn study-program__btn">Информатика</button>
-                    <button class="btn study-program__btn">Английский язык</button>
+                <div class="buttons__area ege buttons__area__active">
+                    <button class="btn study-program__btn study-program__btn__active" data-filter="rus-ege">Русский язык</button>
+                    <button class="btn study-program__btn" data-filter="lit-ege">Литература</button>
+                    <button class="btn study-program__btn" data-filter="math-ege">Математика</button>
+                    <button class="btn study-program__btn" data-filter="social-ege">Обществознание</button>
+                    <button class="btn study-program__btn" data-filter="hist-ege">История</button>
+                    <button class="btn study-program__btn" data-filter="geo-ege">География</button>
+                    <button class="btn study-program__btn" data-filter="chem-ege">Химия</button>
+                    <button class="btn study-program__btn" data-filter="bio-ege">Биология</button>
+                    <button class="btn study-program__btn" data-filter="phys-ege">Физика</button>
+                    <button class="btn study-program__btn" data-filter="inf-ege">Информатика</button>
+                    <button class="btn study-program__btn" data-filter="eng-ege">Английский язык</button>
+                </div>
+                <div class="buttons__area oge">
+                    <button class="btn study-program__btn study-program__btn__active" data-filter="rus-oge">Русский язык</button>
+                    <button class="btn study-program__btn" data-filter="lit-oge">Литература</button>
+                    <button class="btn study-program__btn" data-filter="math-oge">Математика</button>
+                    <button class="btn study-program__btn" data-filter="social-oge">Обществознание</button>
+                    <button class="btn study-program__btn" data-filter="hist-oge">История</button>
+                    <button class="btn study-program__btn" data-filter="geo-oge">География</button>
+                    <button class="btn study-program__btn" data-filter="chem-oge">Химия</button>
+                    <button class="btn study-program__btn" data-filter="bio-oge">Биология</button>
+                    <button class="btn study-program__btn" data-filter="phys-oge">Физика</button>
+                    <button class="btn study-program__btn" data-filter="inf-oge">Информатика</button>
+                    <button class="btn study-program__btn" data-filter="eng-oge">Английский язык</button>
                 </div>
 
                 <div class="price__display price__display__active">
@@ -431,7 +451,7 @@
                     <br>
                     350 Р/ак.час
                 </div>
-                <div class="content__display content__display__active">
+                <div class="content__display rus-ege content__display__active">
                     <div class="content__title">
                         Подготовка к ЕГЭ по
                         <span class="purple__text">русскому языку</span>
@@ -451,17 +471,357 @@
                         <li class="content__item">Обучение анализу сложных синтаксических конструкций</li>
                     </ul>
                 </div>
+                <div class="content__display math-ege">
+                    <div class="content__title">
+                        Подготовка к ЕГЭ по
+                        <span class="purple__text">математике</span>
+                    </div>
+                    <ul class="content__list">
+                        <li class="content__item">Изучение планиметрии и стереометрии
+                        </li>
+                        <li class="content__item">Проработка заданий на действия с функциям</li>
+                        <li class="content__item">Изучение тригонометрии
+                        </li>
+                        <li class="content__item">Изучение математических моделей</li>
+                        <li class="content__item">Практика расчета уравнений и неравенств</li>
+                        <li class="content__item">Практика выполнения действий с геометрическими фигурами, координатами и векторами
+                        </li>
+                    </ul>
+                </div>
+                <div class="content__display social-ege">
+                    <div class="content__title">
+                        Подготовка к EГЭ по
+                        <span class="purple__text">обществознанию</span>
+                    </div>
+                    <ul class="content__list">
+                        <li class="content__item">Изучение политических систем, экономики, социальных отношений, права, культуры и других аспектов общества
+                        </li>
+                        <li class="content__item">Изучение основных теорий и концепций</li>
+                        <li class="content__item">Развитие критического мышления и аргументации
+                        </li>
+                        <li class="content__item">Освоение методики и стратегии решения задач и выполнения заданий, встречающихся для ЕГЭ; в том числе задачи с графиками и диаграммами</li>
+                        <li class="content__item">Развитие навыка умения работать с текстом, иллюстрировать примерами социальные явления, тенденции</li>
+                        <li class="content__item">Развитие навыка формулировки собственного оценочного суждения по заявленной проблеме и составления сложного плана развернутого ответа по конкретной теме</li>
+                        <li class="content__item">Развитие навыка писать мини-сочинение</li>
+                    </ul>
+                </div>
+                <div class="content__display hist-ege">
+                    <div class="content__title">
+                        Подготовка к EГЭ по
+                        <span class="purple__text">истории</span>
+                    </div>
+                    <ul class="content__list">
+                        <li class="content__item">ИРазвитие умения понимать значимость исторических событий и грамотно их интерпретировать
+                        </li>
+                        <li class="content__item">Разбор исторических событий и работа с материалом</li>
+                        <li class="content__item">Развитие умения логично аргументировать свою точку зрения и грамотно дать ответ на вопрос
+                        </li>
+                        <li class="content__item">Изучение политического, экономического и культурного развития России в
+                            <br>- Древности и Средневековье (с древнейших времен до XVIII века)
+                            <br>- В Новое время (с XVIII века по начало XX века)
+                            <br>- В Новейшее время (XX век и начало XXI века)</li>
+                    </ul>
+                </div>
+                <div class="content__display geo-ege">
+                    <div class="content__title">
+                        Подготовка к ЕГЭ по
+                        <span class="purple__text">географии</span>
+                    </div>
+                    <ul class="content__list">
+                        <li class="content__item">Повтор и структурирование школьных знаний по предмету
+                        </li>
+                        <li class="content__item">Обучение навыкам работы со статистическими, картографическими материалами</li>
+                        <li class="content__item">Обучение анализу и систематизации информации для поиска оптимального ответа на поставленную задачу
+                        </li>
+                        <li class="content__item">Решение заданий КИМ ОГЭ всех уровней сложности с подробной работой над ошибками;</li>
+                    </ul>
+                </div>
+                <div class="content__display chem-ege">
+                    <div class="content__title">
+                        Подготовка к ЕГЭ по
+                        <span class="purple__text">химии</span>
+                    </div>
+                    <ul class="content__list">
+                        <li class="content__item">Изучение органической и физической химии
+                        </li>
+                        <li class="content__item">Изучение химических элеменов, соединений, реакций, законов химии, химической кинетики, термодинамики, электрохимии, равновесия и других тем</li>
+                        <li class="content__item">Обучение химическим задачам
+                        </li>
+                        <li class="content__item">Обучение умению интерпретировать и анализировать экспериментальные данные, проводить лабораторные работы и использовать химическую терминологию</li>
+                        <li class="content__item">Изучение методик решения типичных заданий, тренировку в выполнении практических задач и анализе графиков и таблиц
+                        </li>
+                    </ul>
+                </div>
+                <div class="content__display bio-ege">
+                    <div class="content__title">
+                        Подготовка к ЕГЭ по
+                        <span class="purple__text">биологии</span>
+                    </div>
+                    <ul class="content__list">
+                        <li class="content__item">Знакомство с достижениями биологии, ролями ученых в познании окружающего мира, ролями биологических теорий и гипотез в формировании современной картины мира.
+                        </li>
+                        <li class="content__item">Решение заданий на проверку знаний о многообразий клеток, их строения и функций, о генах и генетическом коде</li>
+                        <li class="content__item">Усвоение знаний о вирусах, селекции организмов и биотехнологий, о о вредном влиянии мутагенов на генетическое строение клетки
+                        </li>
+                        <li class="content__item">Получение знаний о многообразии, строении, жизнедеятельности и размножении организмов различных царств живой природы</li>
+                        <li class="content__item">Изучение строения жизнедеятельности организма человека, основ гигиенических норм и правил здорового образа жизни</li>
+                        <li class="content__item">Решение заданий, направленных на контроль знаний о видах, структурах и результатах эволюции органического мира
+                        </li>
+                        <li class="content__item">Составление заданий о цепях питания, круговороте веществ в биосфере
+                        </li>
+                    </ul>
+                </div>
+                <div class="content__display phys-ege">
+                    <div class="content__title">
+                        Подготовка к ЕГЭ по
+                        <span class="purple__text">физике</span>
+                    </div>
+                    <ul class="content__list">
+                        <li class="content__item">Изучение механики: включает в себя кинематику, динамику, статику, законы сохранения энергии и импульса, механические колебания и волны
+                        </li>
+                        <li class="content__item">Изучение молекулярной физики и термодинамики: строение вещества и тепловые процессы</li>
+                        <li class="content__item">Изучение электродинамики: электростатика, законы постоянного тока, магнитное поле, явление электромагнитной индукции, электромагнитные колебания и волны
+                        </li>
+                        <li class="content__item">Изучение основ специальной теории относительности</li>
+                        <li class="content__item">Изучение квантовой физики: описывает основные свойства и поведение атомов, ионов, молекул, конденсированных сред, и других систем с электронно-ядерным строением, а также поведение электронов и фотонов</li>
+                    </ul>
+                </div>
+                <div class="content__display inf-ege">
+                    <div class="content__title">
+                        Подготовка к ЕГЭ по
+                        <span class="purple__text">информатике</span>
+                    </div>
+                    <ul class="content__list">
+                        <li class="content__item">Изучение алгоритмов и структуры данных
+                        </li>
+                        <li class="content__item">Программирование на выбранном языке программирования</li>
+                        <li class="content__item">Изучение основ компьютерных сетей и протоколов
+                        </li>
+                        <li class="content__item">Изучение баз данных и SQL-запросов</li>
+                        <li class="content__item">Веб-разработка и HTML/CSS</li>
+                        <li class="content__item">Основы алгоритмического мышления и решения задач</li>
+                        <li class="content__item">Моделирование и анализ данных</li>
+                        <li class="content__item">Изучение криптографии и защиты информации</li>
+                        <li class="content__item">Изучение основ операционных систем и работу с файловой системой</li>
+                        <li class="content__item">Создание и разработка программных проектов
+                        </li>
+                    </ul>
+                </div>
+                <div class="content__display eng-ege">
+                    <div class="content__title">
+                        Подготовка к ЕГЭ по
+                        <span class="purple__text">английскому языку</span>
+                    </div>
+                    <ul class="content__list">
+                        <li class="content__item">Изучение грамматики и синтаксиса английского языка
+                        </li>
+                        <li class="content__item">Изучение лексику и пополнение словарного запаса</li>
+                        <li class="content__item">Изучение фонетики и произношения</li>
+                        <li class="content__item">Чтение и понимание текстов различных жанров и стилей</li>
+                        <li class="content__item">Письменное выражение своих мыслей и идей</li>
+                        <li class="content__item">Устное владение языком и говорение на английском</li>
+                        <li class="content__item">Аудирование и понимание разговорной речи</li>
+                        <li class="content__item">Говорение и диалоги на различные темы</li>
+                        <li class="content__item">Обучение навыку понимания и анализ английской литературы и текстов разных жанров</li>
+                        <li class="content__item">Изучение правил орфографии, пунктуации и оформления письменных работ</li>
+                        <li class="content__item">Использование английского языка для коммуникации и общения</li>
+                        <li class="content__item">Развитие навыков аргументации и критического мышления на английском языке</li>
+                    </ul>
+                </div>
+                <div class="content__display lit-ege">
+                    <div class="content__title">
+                        Подготовка к ЕГЭ по
+                        <span class="purple__text">литературе</span>
+                    </div>
+                    <ul class="content__list">
+                        <li class="content__item">Изучение литературных произведений различных эпох и жанров
+                        </li>
+                        <li class="content__item">Знакомство с жизнью и творчеством известных писателей и поэтов</li>
+                        <li class="content__item">Изучение литературных направлений и течений
+                        </li>
+                        <li class="content__item">Изучение литературных приемов и стилистики текстов</li>
+                        <li class="content__item">Анализ и интерпретация литературных произведений</li>
+                        <li class="content__item">Изучение символики и образов в литературе</li>
+                        <li class="content__item">Изучение социального и исторического контекста литературных произведений</li>
+                        <li class="content__item">Изучение художественных средств и языковых особенностей текстов</li>
+                        <li class="content__item">Сравнение и сопоставление разных произведений</li>
+                        <li class="content__item">Анализ структуры и композиции произведений
+                        </li>
+                        <li class="content__item">Особенности поэзии и поэтического языка</li>
+                        <li class="content__item">Развитие критического мышления и аргументации в литературных исследованиях
+                        </li>
+                    </ul>
+                </div>
+                <div class="content__display math-oge">
+                    <div class="content__title">
+                        Подготовка к ОГЭ по
+                        <span class="purple__text">математике</span>
+                    </div>
+                    <ul class="content__list">
+                        <li class="content__item">Изучение арифметических операций и числовых выражений
+                        </li>
+                        <li class="content__item">Изучение алгебраических выражений и уравнений</li>
+                        <li class="content__item">Изучение геометрических фигур и пространственных отношений
+                        </li>
+                        <li class="content__item">Изучение тригонометрии и геометрических преобразований</li>
+                        <li class="content__item">Изучение и построение функций и графиков</li>
+                        <li class="content__item">Работа с пропорциями и процентами</li>
+                        <li class="content__item">Изучение статистики и вероятности</li>
+                        <li class="content__item">Решение задач на применение математических методов</li>
+                        <li class="content__item">Математическое моделирование и анализ данных</li>
+                        <li class="content__item">Проведение логических операций и рассуждений</li>
+                        <li class="content__item">Изучение комбинаторики и числовой последовательности</li>
+                        <li class="content__item">Работа с геометрическими и алгебраическими формулами</li>
+                    </ul>
+                </div>
+                <div class="content__display social-oge">
+                    <div class="content__title">
+                        Подготовка к ОГЭ по
+                        <span class="purple__text">обществознанию</span>
+                    </div>
+                    <ul class="content__list">
+                        <li class="content__item">Изучение структуры и функций государства
+                        </li>
+                        <li class="content__item"> Изучение правовых норм и правовой системы</li>
+                        <li class="content__item">Изучение социальных институтов и их влияния на общество
+                        </li>
+                        <li class="content__item">Изучение политических систем и политических процессов</li>
+                        <li class="content__item">Изучение экономических отношений и рыночных механизмов</li>
+                        <li class="content__item">Изучение социальных групп и их роли в обществе</li>
+                        <li class="content__item">Изучение культуры и культурных ценностей</li>
+                    </ul>
+                </div>
+                <div class="content__display hist-oge">
+                    <div class="content__title">
+                        Подготовка к ОГЭ по
+                        <span class="purple__text">истории</span>
+                    </div>
+                    <ul class="content__list">
+                        <li class="content__item">Изучение исторических эпох и периодов
+                        </li>
+                        <li class="content__item">Анализ политических событий и их последствий</li>
+                        <li class="content__item">Изучение социальных и экономических процессов
+                        </li>
+                        <li class="content__item">Изучение культурных и научных достижений</li>
+                        <li class="content__item">Изучение развития государств и политических систем</li>
+                        <li class="content__item">Изучение взаимодействия между различными народами и культурами</li>
+                        <li class="content__item">Изучение конфликтов между странами и народами</li>
+                        <li class="content__item">Изучение роли и влияния великих личностей на исторические события</li>
+                        <li class="content__item">Изучение изменений в общественных ценностях и менталитете</li>
+                        <li class="content__item">Анализ и интерпретация исторических событий и документов</li>
+                    </ul>
+                </div>
+                <div class="content__display chem-oge">
+                    <div class="content__title">
+                        Подготовка к ОГЭ по
+                        <span class="purple__text">химии</span>
+                    </div>
+                    <ul class="content__list">
+                        <li class="content__item">Изучение химических элементов и периодической таблицы
+                        </li>
+                        <li class="content__item">Анализ химических реакций и их механизмов</li>
+                        <li class="content__item">Проведение экспериментов и лабораторных работ по химии
+                        </li>
+                        <li class="content__item">Изучение химических свойств и характеристик веществ</li>
+                        <li class="content__item">Анализ химических формул и уравнений</li>
+                        <li class="content__item">Изучение основных законов химии</li>
+                        <li class="content__item">Анализ химических растворов и их концентрации</li>
+                        <li class="content__item">Изучение химических связей и структуры молекул</li>
+                        <li class="content__item">Анализ химических сил и взаимодействий между веществами</li>
+                        <li class="content__item">Изучение различных видов химических реакций</li>
+                        <li class="content__item">Анализ физико-химических свойств веществ, таких как плотность, температура плавления и кипения, растворимость и других</li>
+                        <li class="content__item">Проведение расчетов и интерпретация результатов химических экспериментов</li>
+                    </ul>
+                </div>
+                <div class="content__display bio-oge">
+                    <div class="content__title">
+                        Подготовка к ОГЭ по
+                        <span class="purple__text">биологии</span>
+                    </div>
+                    <ul class="content__list">
+                        <li class="content__item">Знакомство с достижениями биологии, ролями ученых в познании окружающего мира, ролями биологических теорий и гипотез в формировании современной картины мира.
+                        </li>
+                        <li class="content__item">Решение заданий на проверку знаний о многообразии клеток, их строения и функций, о генах и генетическом коде</li>
+                        <li class="content__item">Усвоение знаний о вирусах, селекции организмов и биотехнологий, о вредном влиянии мутагенов на генетическое строение клетки
+                        </li>
+                        <li class="content__item">Получение знаний о многообразии, строении, жизнедеятельности и размножении организмов различных царств живой природы</li>
+                        <li class="content__item">Изучение строения жизнедеятельности организма человека, основ гигиенических норм и правил здорового образа жизни</li>
+                        <li class="content__item">Решение заданий, направленных на контроль знаний о видах, структурах и результатах эволюции органического мира</li>
+                        <li class="content__item">Составление заданий о цепях питания, круговороте веществ в биосфере</li>
+                    </ul>
+                </div>
+                <div class="content__display phys-oge">
+                    <div class="content__title">
+                        Подготовка к ОГЭ по
+                        <span class="purple__text">физике</span>
+                    </div>
+                    <ul class="content__list">
+                        <li class="content__item">Изучение физических явлений и законов
+                        </li>
+                        <li class="content__item">Анализ движения и взаимодействия тел</li>
+                        <li class="content__item">Изучение электромагнетизма и электрических цепей
+                        </li>
+                        <li class="content__item">Анализ оптики и световых явлений</li>
+                        <li class="content__item">Изучение термодинамики и тепловых процессов</li>
+                        <li class="content__item">Анализ колебаний и волн</li>
+                        <li class="content__item">Изучение атомной физики и ядерных процессов</li>
+                        <li class="content__item">Анализ энергии и ее преобразований</li>
+                        <li class="content__item">Изучение электромагнитного излучения и его взаимодействия с веществом</li>
+                        <li class="content__item">Анализ механических и электрических устройств</li>
+                        <li class="content__item">Изучение физических экспериментов и методов их проведения</li>
+                    </ul>
+                </div>
+                <div class="content__display inf-oge">
+                    <div class="content__title">
+                        Подготовка к ОГЭ по
+                        <span class="purple__text">информатике</span>
+                    </div>
+                    <ul class="content__list">
+                        <li class="content__item">Изучение основ программирования и алгоритмического мышления
+                        </li>
+                        <li class="content__item">Анализ структур данных и их использование</li>
+                        <li class="content__item">Изучение языков программирования и их синтаксиса
+                        </li>
+                        <li class="content__item">Анализ алгоритмов и методов решения задач</li>
+                        <li class="content__item">Изучение принципов работы компьютерных сетей и интернета</li>
+                        <li class="content__item">Анализ баз данных и основ работы с ними</li>
+                        <li class="content__item">Изучение основ работы с операционными системами</li>
+                        <li class="content__item">Анализ принципов построения веб-сайтов и разработки интерфейсов</li>
+                        <li class="content__item">Изучение основ криптографии и защиты информации</li>
+                        <li class="content__item">Анализ принципов работы компьютерной графики и обработки изображений</li>
+                    </ul>
+                </div>
+                <div class="content__display lit-oge">
+                    <div class="content__title">
+                        Подготовка к ОГЭ по
+                        <span class="purple__text">литературе</span>
+                    </div>
+                    <ul class="content__list">
+                        <li class="content__item">Изучение литературных произведений различных жанров и эпох
+                        </li>
+                        <li class="content__item">Анализ художественных образов и их роли в произведении</li>
+                        <li class="content__item">Изучение литературных приемов и стилей письма
+                        </li>
+                        <li class="content__item">Анализ сюжета, композиции и символики произведений</li>
+                        <li class="content__item">Изучение исторического контекста и социальных аспектов литературы</li>
+                        <li class="content__item">Анализ структуры и языковых особенностей произведений</li>
+                        <li class="content__item">Изучение биографии и творчества известных писателей</li>
+                        <li class="content__item">Анализ литературных критических текстов и исследований</li>
+                        <li class="content__item">Изучение литературных течений и школ</li>
+                        <li class="content__item">Анализ поэтических форм и стихотворных приемов</li>
+                    </ul>
+                </div>
             </div>
             <div class="h1__title study-program__title">
                 Другие программы в «Формуле»
             </div>
             <div class="additional-content">
                 <div class="buttons__area additional__buttons__area">
-                    <button class="btn study-program__btn study-program__btn__active">Репетиторство</button>
-                    <button class="btn study-program__btn">Интенсивы</button>
-                    <button class="btn study-program__btn">Практические и лабораторные занятия</button>
+                    <button class="btn additional-program__btn additional-program__btn__active" data-filter="tutor">Репетиторство</button>
+                    <button class="btn additional-program__btn" data-filter="intensive">Интенсивы</button>
+                    <button class="btn additional-program__btn" data-filter="practice">Практические и лабораторные занятия</button>
                 </div>
-                <div class="additional__display">
+                <div class="additional__display tutor additional__display__active">
                     <div class="content__title">
                         Репетиторство
                     </div>
@@ -473,6 +833,55 @@
                             Группы по математике делятся на 3 уровня подготовки, по остальным предметам - на два
                             уровня
                             подготовки
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn--primary additional-content__btn">
+                        Подробнее
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.33203 22.6654L22.6654 9.33203" stroke="#232323" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.33203 9.33203H22.6654V22.6654" stroke="#232323" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="additional__display intensive">
+                    <div class="content__title">
+                        Интенсивы
+                    </div>
+                    <ul class="content__list">
+                        <li class="content__item">
+                            Летние интенсивы проводятся в июле
+                        </li>
+                        <li class="content__item">
+                            Преподается: математика, физика, химия, информатика
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn--primary additional-content__btn">
+                        Подробнее
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.33203 22.6654L22.6654 9.33203" stroke="#232323" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.33203 9.33203H22.6654V22.6654" stroke="#232323" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="additional__display practice">
+                    <div class="content__title">
+                        Практические и лабораторные занятия
+                    </div>
+                    <ul class="content__list">
+                        <li class="content__item">
+                            Занятия проходят 1 раз в месяц по 1,5 часа
+                        </li>
+                        <li class="content__item">
+                            Включают в себя запланированные школьной программой и дополнительные исследовательские и лабораторные работы по физике, химии и биологии
+                        </li>
+                        <li class="content__item">
+                            Умение после проведённых экспериментов или химических реакций правильно рассчитать и записать измерение и погрешность или написать уравнение химической реакции.
                         </li>
                     </ul>
                     <a href="#" class="btn btn--primary additional-content__btn">
@@ -831,7 +1240,7 @@
                 и узнай, в какой профессии у тебя есть способности!
             </div>
             <button class="btn btn--primary go-to-pop-up__btn">
-                Записаться
+                <a href="#user__form">Записаться</a>
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9.33203 22.6654L22.6654 9.33203" stroke="#232323" stroke-width="2" stroke-linecap="round"
                           stroke-linejoin="round"/>
