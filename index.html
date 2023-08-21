@@ -86,7 +86,7 @@
     <nav class="nav" id="burger">
         <ul class="container nav__list">
             <li class="nav__item">
-                <a href="#program__list" class="nav__link open-list__btn">
+                <a href="index.html#program__list" class="nav__link open-list__btn">
                     Курсы
                 </a>
             </li>
@@ -432,17 +432,14 @@
                     <button class="btn study-program__btn" data-filter="eng-ege">Английский язык</button>
                 </div>
                 <div class="buttons__area oge">
-                    <button class="btn study-program__btn study-program__btn__active" data-filter="rus-oge">Русский язык</button>
                     <button class="btn study-program__btn" data-filter="lit-oge">Литература</button>
                     <button class="btn study-program__btn" data-filter="math-oge">Математика</button>
                     <button class="btn study-program__btn" data-filter="social-oge">Обществознание</button>
                     <button class="btn study-program__btn" data-filter="hist-oge">История</button>
-                    <button class="btn study-program__btn" data-filter="geo-oge">География</button>
                     <button class="btn study-program__btn" data-filter="chem-oge">Химия</button>
                     <button class="btn study-program__btn" data-filter="bio-oge">Биология</button>
                     <button class="btn study-program__btn" data-filter="phys-oge">Физика</button>
                     <button class="btn study-program__btn" data-filter="inf-oge">Информатика</button>
-                    <button class="btn study-program__btn" data-filter="eng-oge">Английский язык</button>
                 </div>
 
                 <div class="price__display price__display__active">
@@ -1002,7 +999,7 @@
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
-                <a href="not-found.html" class="btn teachers__btn btn--primary">
+                <a href="teachers.html" class="btn teachers__btn btn--primary">
                     Познакомиться с преподавателями
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_894_1157)">
@@ -1477,12 +1474,12 @@
                         <input type="text" name="firstname" required class="input input__name" placeholder="Ваше имя">
                         <input type="tel" name="phone__number" required class="input input__phone" placeholder="Номер телефона">
                         <input type="email" name="email" required class="input input__email" placeholder="Email">
-                        <select id="Program" name="program" onchange="ChangeProgram" class="input input__program">
+                        <select id="program_select" name="program" onchange="ChangeProgram()" class="input input__program">
                             <option value="ЕГЭ" class="input__prog__item">Подготовка к ЕГЭ</option>
                             <option value="ОГЭ" class="input__prog__item">Подготовка к ОГЭ</option>
                             <option value="Олимпиады" class="input__prog__item">Подготовка к олимпиадам</option>
                         </select>
-                        <select id="Lesson" name="lesson" onchange="ChangeLesson" class="input input__lesson">
+                        <select id="lesson_select" name="lesson" onchange="ChangeLesson()" class="input input__lesson">
                             <option value="Русский язык" class="input__prog__item">Русский язык</option>
                             <option value="Математика" class="input__prog__item">Математика</option>
                             <option value="Информатика" class="input__prog__item">Информатика</option>
@@ -1494,14 +1491,14 @@
                             <option value="География" class="input__prog__item">География</option>
                             <option value="Физика" class="input__prog__item">Физика</option>
                         </select>
-                        <select id="class-age" name="class" onchange="ChangeClass" class="input input__class">
+                        <select id="class_select" name="class" onchange="ChangeClass()" class="input input__class">
                             <option value="7" class="input__prog__item">7 класс</option>
                             <option value="8" class="input__prog__item">8 класс</option>
                             <option value="9" class="input__prog__item">9 класс</option>
                             <option value="10" class="input__prog__item">10 класс</option>
                             <option value="11" class="input__prog__item">11 класс</option>
                         </select>
-                        <select id="address" name="address" onchange="ChangeAddress" class="input input__address">
+                        <select id="address_select" name="address" onchange="ChangeAddress()" class="input input__address">
                             <option value="Луговая, 30" class="input__prog__item">р-н Луговая: ул. Луговая 30</option>
                             <option value="Проспект 100 лет Владивостоку, 103" class="input__prog__item">р-н Вторая речка: Проспект 100 лет Владивостоку 103</option>
                             <option value="Красного Знамени 59" class="input__prog__item">р-н Гоголя: Красного Знамени 59</option>
