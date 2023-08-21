@@ -27,6 +27,15 @@ function ChangeProgram() {
     if (selectedProgram === "Олимпиады") {
         optionsToHide = ["Русский язык", "Информатика", "Химия", "Биология", "Обществознание",
         "История", "Литература", "География"];
+        let classOptions = document.getElementById("class_select").options;
+        for (let i = 0; i < classOptions.length; i++) {
+            let option = classOptions[i];
+            if (option.value === "11") {
+                option.style.display = "none";
+            } else {
+                option.style.display = "block";
+            }
+        }
     }
     else if (selectedProgram === "ОГЭ") {
         optionsToHide = ["География"];
@@ -47,6 +56,41 @@ function ChangeProgram() {
 
 function ChangeLesson() {
     let selectedLesson = document.getElementById("lesson_select").value;
+    let optionsToHide = [];
+
+    if (selectedLesson === "Химия") {
+        optionsToHide = ["7"];
+    }
+    else if (selectedLesson === "Биология") {
+        optionsToHide = ["7", "8"];
+    }
+    else if (selectedLesson === "Обществознание") {
+        optionsToHide = ["7", "8"];
+    }
+    else if (selectedLesson === "История") {
+        optionsToHide = ["7", "8"];
+    }
+    else if (selectedLesson === "Информатика") {
+        optionsToHide = ["7", "8"];
+    }
+    else if (selectedLesson === "География") {
+        optionsToHide = ["7", "8", "10"];
+    }
+    else if (selectedLesson === "Литература") {
+        optionsToHide = ["7", "8", "10"];
+    }
+
+    let classSelect = document.getElementById("class_select");
+    let classOptions = classSelect.options;
+
+    for (let i = 0; i < classOptions.length; i++) {
+        let option = classOptions[i];
+        if (optionsToHide.includes(option.value)) {
+            option.style.display = "none";
+        } else {
+            option.style.display = "block";
+        }
+    }
 }
 
 function ChangeClass() {
@@ -79,8 +123,8 @@ menuBtn.addEventListener('click', function(){
 const programTabs = document.querySelectorAll(".study-program__btn");
 const programContents = document.querySelectorAll(".content__display");
 
-for (let i = 0; i < tabs.length; i++) {
-    programTabs[i].addEventListener("click", ( event ) => {
+for (let i = 0; i < programTabs.length; i++) {
+    programTabs[i].addEventListener("click", () => {
         programTabs.forEach((btn) => btn.classList.remove("study-program__btn__active"));
         programTabs[i].classList.add("study-program__btn__active");
 
@@ -101,7 +145,7 @@ const additionalTabs = document.querySelectorAll(".additional-program__btn");
 const additionalContents = document.querySelectorAll(".additional__display");
 
 for (let i = 0; i < additionalTabs.length; i++) {
-    additionalTabs[i].addEventListener("click", ( event ) => {
+    additionalTabs[i].addEventListener("click", () => {
         additionalTabs.forEach((btn) => btn.classList.remove("additional-program__btn__active"));
         additionalTabs[i].classList.add("additional-program__btn__active");
 
@@ -122,7 +166,7 @@ const switcher = document.querySelectorAll(".switch");
 const switchContent = document.querySelectorAll(".buttons__area");
 
 for (let i = 0; i < switcher.length; i++) {
-    switcher[i].addEventListener("click", ( event ) => {
+    switcher[i].addEventListener("click", () => {
         switcher.forEach((btn) => btn.classList.remove("switch__active"));
         switcher[i].classList.add("switch__active");
 
@@ -136,10 +180,10 @@ for (let i = 0; i < switcher.length; i++) {
             }
         });
 
-        for(let j = 0; j < tabs.length; j++) {
+        for(let j = 0; j < programTabs.length; j++) {
             if(programTabs[j].parentElement.classList.contains("buttons__area__active")){
                 programTabs[j].classList.add("study-program__btn__active");
-                const filterBtnValue = tabs[j].getAttribute("data-filter");
+                const filterBtnValue = programTabs[j].getAttribute("data-filter");
                 programContents.forEach((content) => {
                     if (content.classList.contains(filterBtnValue)) {
                         content.classList.add("content__display__active");
