@@ -1,0 +1,38 @@
+.contacts__section .contacts__content {
+    display: none;
+}
+
+.contacts__section .contacts__content.show {
+    display: block;
+}
+
+.contacts__section .branch__card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "A B" "C B" "D B";
+    column-gap: 30px;
+}
+
+.contacts__section .branch__card__photo {
+    grid-area: B;
+    background-color: rgb(203, 202, 202);
+    border-radius: calc(var(--border-radius) / 2);
+    min-height: 240px;
+}
+
+.contacts__section .branch__card__title span {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.contacts__section .branch__card__title img {
+    width: 54px;
+}
+
+.contacts__section .branch__card__category {
+    font-weight: 700;
+}
+
+.contacts__section .branch__card__info {
+    margin-top: 20px;
+}

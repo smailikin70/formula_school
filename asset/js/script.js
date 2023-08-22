@@ -101,18 +101,6 @@ function ChangeAddress() {
     let selectedAddress = document.getElementById("address_select").value;
 }
 
-$(document).ready(function () {
-    PopUpHide();
-})
-
-function PopUpShow() {
-    $("#popup1").show();
-}
-
-function PopUpHide() {
-    $("#popup1").hide();
-}
-
 let menuBtn = document.querySelector('.burger__btn');
 let menu = document.querySelector('.nav__list');
 menuBtn.addEventListener('click', function(){
