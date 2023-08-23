@@ -1,0 +1,80 @@
+.career-why__content {
+    display: grid;
+    gap: 50px;
+}
+
+.career-why__card {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "A B B" "C D E";
+    column-gap: 60px;
+    align-items: center;
+}
+
+.career-why__card__number {
+    grid-area: A;
+    font-size: 48px;
+    color: var(--primary-100);
+    display: flex;
+    align-items: center;
+}
+
+.career-why__card__title {
+    grid-area: C;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.career-why__card__descr {
+    grid-area: D;
+}
+
+.career-why__card__circles {
+    grid-area: E;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.career-why__card__circles .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: #ECE0FF;
+}
+
+/* как проходит профориентация */
+
+.career-how__content {
+    border-radius: 50px;
+    background: var(--primary-100);
+    padding: 70px 0 70px 0;
+    display: grid;
+    row-gap: 50px;
+}
+
+.career-how__card {
+    display: grid;
+    grid-template-areas: "A B" "A C";
+    column-gap: 40px;
+    align-items: center;
+}
+
+.career-how__card__number {
+    font-size: 20px;
+    font-weight: 700;
+    grid-area: A;
+    padding: 50px;
+    border-radius: 0 25px 25px 0;
+    background: #FFFAD1;
+}
+
+.career-how__card__title {
+    font-size: 22px;
+    color: #FFF;
+    font-weight: 700;
+}
+
+.career-how__card__descr {
+    color: #FFF;
+}

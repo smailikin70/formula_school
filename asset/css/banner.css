@@ -99,6 +99,10 @@
     background-size: contain;
 }
 
+.banner__btn {
+    margin-top: 30px;
+}
+
 /* Баннер на странице достижений */
 
 .achievement__banner {
@@ -272,6 +276,10 @@
 
     .achievement__banner__descr {
         font-size: 16px;
+    }
+
+    .banner__btn {
+        margin-top: 15px;
     }
 }
 
