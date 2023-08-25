@@ -77,8 +77,8 @@
     .form__content{
         display: block;
     }
-.form__photo{
-    display: none;
-}
+    .form__photo{
+        display: none;
+    }
 }
 
