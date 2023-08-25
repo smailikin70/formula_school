@@ -39,6 +39,9 @@ new Accordion('.accordion-container');
 
 function ChangeProgram() {
     let selectedProgram = document.getElementById("program_select").value;
+    let lessonSelect = document.getElementById("lesson_select");
+    let classSelect = document.getElementById("class_select");
+    let addressSelect = document.getElementById("address_select");
 
     let optionsToHide = [];
 
@@ -54,12 +57,22 @@ function ChangeProgram() {
                 option.style.display = "block";
             }
         }
+        lessonSelect.style.display = "block";
+        classSelect.style.display = "block";
+        addressSelect.style.display = "block";
     }
     else if (selectedProgram === "ОГЭ") {
         optionsToHide = ["География"];
+        lessonSelect.style.display = "block";
+        classSelect.style.display = "block";
+        addressSelect.style.display = "block";
+    }
+    else if (selectedProgram === "Профориентация") {
+        lessonSelect.style.display = "none";
+        classSelect.style.display = "none";
+        addressSelect.style.display = "none";
     }
 
-    let lessonSelect = document.getElementById("lesson_select");
     let lessonOptions = lessonSelect.options;
 
     for (let i = 0; i < lessonOptions.length; i++) {
