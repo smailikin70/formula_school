@@ -40,10 +40,27 @@
     width: 50px;
     height: 50px;
     border-radius: 50px;
+    background: #F9F9F9;
+}
+
+.career-why__card__circles .circle.rare {
     background: #ECE0FF;
 }
 
-/* как проходит профориентация */
+.career-why__card__circles .circle.medium-rare {
+    background: #DBC5FF;
+}
+
+.career-why__card__circles .circle.medium-well {
+    background: #BF98FF;
+}
+
+.career-why__card__circles .circle.well-done {
+    background: #9A4EFF;
+}
+
+
+    /* как проходит профориентация */
 
 .career-how__content {
     border-radius: 50px;
@@ -66,7 +83,6 @@
     grid-area: A;
     padding: 50px;
     border-radius: 0 25px 25px 0;
-    background: #FFFAD1;
 }
 
 .career-how__card__title {
@@ -76,5 +92,72 @@
 }
 
 .career-how__card__descr {
+    color: #FFF;
+    max-width: 90%;
+}
+
+.career-how__card.card__1 .career-how__card__number {
+    width: 180px;
+    background: #FFFAD1;
+}
+
+.career-how__card.card__2 .career-how__card__number {
+    width: 240px;
+    background: #FFF5A2;
+}
+
+.career-how__card.card__3 .career-how__card__number {
+    width: 300px;
+    background: #FFEF6A;
+}
+
+.career-how__card.card__4 .career-how__card__number {
+    width: 360px;
+    background: #FFEA3D;
+}
+
+    /* Где проходит профориентация */
+
+.career-where__title {
+    margin-bottom: 1em;
+}
+
+.career-where__description {
+    margin-bottom: 2em;
+}
+
+.career-where__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.career-where__card__title {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.career-where__card__photo {
+    width: 100%;
+    height: 242px;
+    border-radius: 25px;
+    background: #F9F9F9;;
+}
+
+/* Запись на профориентацию */
+
+.career-form__content {
+    background-color: var(--primary-100);
+    border-radius: calc(var(--border-radius) / 2);
+    padding: 90px 60px;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--gap);
+}
+
+#career__form__response {
+    margin-top: 10px;
     color: #FFF;
 }
