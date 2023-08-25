@@ -1,3 +1,21 @@
+window.addEventListener('DOMContentLoaded', () => {
+    const headerPlace = document.getElementById('header__place');
+    const footerPlace = document.getElementById('footer__place');
+
+    fetch('header.html')
+        .then(response => response.text())
+        .then(header => {
+            headerPlace.innerHTML = header + headerPlace.innerHTML;
+        });
+
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(footer => {
+            footerPlace.innerHTML += footer;
+        });
+});
+
+
 const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     navigation: {
