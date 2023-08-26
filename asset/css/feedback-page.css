@@ -1,0 +1,44 @@
+.feedback__section .feedback__content {
+    display: none;
+    columns: 2;
+    column-gap: 25px;
+}
+
+.feedback__section .feedback__content.show {
+    display: block;
+}
+
+.feedback__section .feedback__card {
+    display: inline-block;
+    margin-bottom: 25px;
+    break-inside: avoid;
+}
+
+.feedback__section .feedback__head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.feedback__section  .feedback__name {
+    margin: 0;
+}
+
+.feedback__section .feedback__item {
+    padding: 5px 10px;
+    color: var(--text-white);
+    background-color: var(--primary-100);
+    border-radius: calc(var(--border-radius) / 2);
+}
+
+.feedback__section .feedback__item:last-child {
+    color: var(--text-white);
+    background-color: var(--primary-100);
+}
+
+.feedback__section .feedback__item.rate{
+    color: var(--text-black);
+    background-color: var(--yellow);
+}

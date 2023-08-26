@@ -6,6 +6,7 @@ window.addEventListener('DOMContentLoaded', () => {
         .then(response => response.text())
         .then(header => {
             headerPlace.innerHTML = header + headerPlace.innerHTML;
+            toggleBurger();
         });
 
     fetch('footer.html')
@@ -14,6 +15,18 @@ window.addEventListener('DOMContentLoaded', () => {
             footerPlace.innerHTML += footer;
         });
 });
+
+function toggleBurger() {
+    try {
+        let menuBtn = document.querySelector('.burger__btn');
+        let menu = document.querySelector('.nav__list');
+        menuBtn.addEventListener('click', function(){
+            menu.classList.toggle('nav__active');
+        })
+    } catch (error) {
+        console.log("Произошла ошибка");
+    }
+}
 
 
 const swiper = new Swiper('.swiper', {
@@ -63,6 +76,11 @@ function ChangeProgram() {
     }
     else if (selectedProgram === "ОГЭ") {
         optionsToHide = ["География"];
+        lessonSelect.style.display = "block";
+        classSelect.style.display = "block";
+        addressSelect.style.display = "block";
+    }
+    else if(selectedProgram === "EГЭ") {
         lessonSelect.style.display = "block";
         classSelect.style.display = "block";
         addressSelect.style.display = "block";
@@ -131,12 +149,6 @@ function ChangeClass() {
 function ChangeAddress() {
     let selectedAddress = document.getElementById("address_select").value;
 }
-
-let menuBtn = document.querySelector('.burger__btn');
-let menu = document.querySelector('.nav__list');
-menuBtn.addEventListener('click', function(){
-    menu.classList.toggle('nav__active');
-})
 
 
 const programTabs = document.querySelectorAll(".study-program__btn");
