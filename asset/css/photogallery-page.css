@@ -1,0 +1,36 @@
+.gallery__section .gallery__content {
+    display: none;
+    columns: 3;
+    column-gap: 25px;
+}
+
+.gallery__section .gallery__content.show {
+    display: block;
+}
+
+.gallery__section .gallery__card {
+    width: 100%;
+    margin-bottom: 25px;
+    break-inside: avoid;
+}
+
+.gallery__section .gallery__card img {
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 798px) {
+    .gallery__section .gallery__content {
+        columns: 2;
+        column-gap: 15px;
+    }
+    .gallery__section .gallery__card {
+        margin-bottom: 15px;
+    }
+
+}
+
+@media screen and (max-width: 670px) {
+    .gallery__section .gallery__content {
+        columns: 1;
+    }
+}

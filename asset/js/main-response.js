@@ -21,10 +21,6 @@ function getResponse(form, message) {
 let userForm = document.getElementById('user__form');
 let userMessage = document.getElementById('user__form__response');
 
-let careerForm = document.getElementById('career__form');
-let careerMessage = document.getElementById('career__form__response');
-
 getResponse(userForm, userMessage);
-getResponse(careerForm, careerMessage);
 
 
