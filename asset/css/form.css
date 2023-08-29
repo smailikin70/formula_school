@@ -63,6 +63,14 @@
     color: #FFF;
 }
 
+.form__content small {
+    color: #FFF;
+}
+
+.career-form__content small {
+    color: #FFF;
+}
+
 @media screen and (max-width: 1350px) {
     .form__content {
         padding: 25px 35px;

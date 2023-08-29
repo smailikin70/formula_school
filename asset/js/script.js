@@ -46,7 +46,7 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
-
+$(".input__phone").mask("+7(999)999-9999");
 
 new Accordion('.accordion-container');
 

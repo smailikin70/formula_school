@@ -128,6 +128,11 @@
     font-weight: 400;
 }
 
+.achievement__banner .study-program__main-switcher {
+    align-self: flex-start;
+    display: flex;
+}
+
 @media screen and (max-width: 1310px) {
     .teacher__banner__photo {
         height: 150%;

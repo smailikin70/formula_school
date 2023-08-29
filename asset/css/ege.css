@@ -1,0 +1,123 @@
+.about__section .about__content {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    grid-template-rows: auto;
+    gap: 25px;
+}
+
+.about__section .about__photo {
+    padding: 50px 50px 50px 50px;
+    background-color: var(--primary-100);
+    border-radius: var(--border-radius);
+}
+
+.about__section .about__photo__content {
+    background-color: #B9ABFF;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.about__section .about__photo__content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about__section .about__recommendation {
+    background: rgba(185, 171, 255, 0.15);
+    border-radius: var(--border-radius);
+    padding: 70px 50px 70px 50px;
+}
+
+.about__section .about__recommendation__header {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.about__section .about__recommendation__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.about__section .about__recommendation__item {
+    display: flex;
+    column-gap: 20px;
+}
+
+.about__section .about__recommendation__item span {
+    color: var(--primary-100);
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.inscription__section {
+    padding: 100px 100px 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../source/img/rays_1.png') left top no-repeat,
+    url("../source/img/rays_2.png") right bottom no-repeat;
+}
+
+.inscription__section .inscription__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.inscription__section .inscription__text {
+    font-size: 38px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.inscription__section .inscription__text span {
+    padding: 5px 5px 5px 5px;
+    background-color: var(--primary-100);
+    color: #FFF;
+    border-radius: var(--border-radius);
+}
+
+.universities__section .universities__content {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 2fr 4fr;
+}
+
+.universities__section .universities__info {
+    background: url('../source/img/rays_2.png') right 70% no-repeat;
+}
+
+.universities__section .universities__info__text {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.universities__section .universities__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px;
+}
+
+.universities__section .universities__item {
+    border-radius: 25px;
+    box-shadow: 0 20px 30px 0 rgba(38, 39, 95, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.btn__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
