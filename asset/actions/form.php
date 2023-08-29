@@ -10,7 +10,7 @@
 
 
   $to = "info@formula-ege.ru";
-
+  $headers = "From: $email";
   $subject = "Новая заявка на обучение!";
 
   $message = "Имя: " . $name . "\n\n";
@@ -21,7 +21,7 @@
   $message .= "Класс: " . $class . "\n\n";
   $message .= "Адрес: " . $address . "\n\n";
 
-  $success = mail($to, $subject, $message);
+  $success = mail($to, $subject, $message, $headers);
 
     if ($success) {
       echo '<p>Заявка отправлена</p>';
