@@ -166,3 +166,76 @@
     "photo2      photo2         photo3        link";
     gap: 25px;
 }*/
+
+.feedback__best__section .feedback__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "f1 f2 img1" "f3 f4 f5 " "f6 f6 img2" "f6 f6 link ";
+    gap: 20px;
+}
+
+.feedback__best__section .feedback__card {
+    padding: 10px;
+}
+
+.feedback__best__section .feedback__photo {
+    border-radius: 25px;
+    box-shadow: 0 20px 30px 0 rgba(38, 39, 95, 0.05);
+}
+
+.feedback__best__section .feedback__photo.img1 {
+    grid-area: img1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.feedback__best__section .feedback__photo.img1 .circle {
+    width: 75px;
+    height: 75px;
+    background-color: #FFEA3D;
+    border-radius: 50%;
+}
+
+.feedback__best__section .feedback__photo.img2 {
+    grid-area: img2;
+}
+
+.feedback__best__section .feedback__photo.img2 img {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.feedback__best__section .feedback__photo .feedback__img {
+    border-radius: 25px;
+}
+
+.feedback__best__section .feedback__card.feedback6 {
+    grid-area: f6;
+}
+
+.feedback__best__section .feedback__link {
+    border-radius: 25px;
+    background: #FFEA3D;
+}
+
+.feedback__best__section .feedback__link__btn {
+    padding: 10px 35px 10px 35px;
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feedback__best__section .feedback__link__btn button {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background-color: #FFAF03;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

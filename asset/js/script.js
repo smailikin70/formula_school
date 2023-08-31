@@ -7,6 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
         .then(header => {
             headerPlace.innerHTML = header + headerPlace.innerHTML;
             toggleBurger();
+            underlineNavItem();
         });
 
     fetch('footer.html')
@@ -46,9 +47,20 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
-$(".input__phone").mask("+7(999)999-9999");
+function underlineNavItem() {
+    const pageTitle = document.title;
+    let navMenu = document.querySelectorAll(".nav__link");
+    navMenu.forEach((e) => {
+        let text = e.innerHTML;
+        if(text === pageTitle) {
+            e.parentElement.classList.add("active");
+        }
+    });
+}
 
 new Accordion('.accordion-container');
+
+$(".input__phone").mask("+7(999)999-9999");
 
 function ChangeProgram() {
     let selectedProgram = document.getElementById("program_select").value;
@@ -73,22 +85,52 @@ function ChangeProgram() {
         lessonSelect.style.display = "block";
         classSelect.style.display = "block";
         addressSelect.style.display = "block";
+        let addressOptions = addressSelect.options;
+        for (let i = 0; i < addressOptions.length; i++) {
+            addressOptions[i].style.display = "block";
+        }
     }
     else if (selectedProgram === "ОГЭ") {
         optionsToHide = ["География"];
         lessonSelect.style.display = "block";
         classSelect.style.display = "block";
         addressSelect.style.display = "block";
+        let addressOptions = addressSelect.options;
+        for (let i = 0; i < addressOptions.length; i++) {
+            addressOptions[i].style.display = "block";
+        }
     }
-    else if(selectedProgram === "EГЭ") {
+    else if(selectedProgram === "EГЭ" || selectedProgram === "Репетиторские услуги") {
         lessonSelect.style.display = "block";
         classSelect.style.display = "block";
         addressSelect.style.display = "block";
+        let addressOptions = addressSelect.options;
+        for (let i = 0; i < addressOptions.length; i++) {
+            addressOptions[i].style.display = "block";
+        }
     }
     else if (selectedProgram === "Профориентация") {
         lessonSelect.style.display = "none";
         classSelect.style.display = "none";
         addressSelect.style.display = "none";
+        let addressOptions = addressSelect.options;
+        for (let i = 0; i < addressOptions.length; i++) {
+            addressOptions[i].style.display = "block";
+        }
+    }
+    else if (selectedProgram === "Практические и лабораторные") {
+        lessonSelect.style.display = "block";
+        classSelect.style.display = "block";
+        addressSelect.style.display = "block";
+        let addressOptions = addressSelect.options;
+        for (let i = 0; i < addressOptions.length; i++) {
+            let option = addressOptions[i];
+            if (option.value !== "Ивановская 6/4") {
+                option.style.display = "none";
+            } else {
+                option.style.display = "block";
+            }
+        }
     }
 
     let lessonOptions = lessonSelect.options;

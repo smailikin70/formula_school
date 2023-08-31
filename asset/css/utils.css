@@ -15,7 +15,6 @@
 }
 
 *:focus {
-    outline: 3px black solid;
     outline-offset: 5px;
 }
 
@@ -53,12 +52,10 @@
 
 
 .btn:focus {
-    outline: 3px black solid;
     outline-offset: 5px;
 }
 
 button:focus {
-    outline: 3px black solid;
     outline-offset: 5px;
 }
 

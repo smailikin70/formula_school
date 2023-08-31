@@ -149,12 +149,25 @@
     padding: 50px;
     padding-left: 50%;
     border-radius: calc(var(--border-radius) / 2);
-    background: #fff url("../source/img/additional_display_bg.png") bottom left no-repeat;
-    background-size: contain;
 
     .content__list {
         margin-bottom: 50px;
     }
+}
+
+.additional__display.tutor {
+    background: #fff url("../source/img/additional_display_bg.png") bottom left no-repeat;
+    background-size: contain;
+}
+
+.additional__display.intensive {
+    background: #fff url("../source/img/additional_bg_intensive.png") bottom left no-repeat;
+    background-size: contain;
+}
+
+.additional__display.practice {
+    background: #fff url("../source/img/additional_bg_practice.png") bottom left no-repeat;
+    background-size: 50%;
 }
 
 .additional__display__active {
@@ -213,6 +226,18 @@
 
     .additional__display{
         padding: 25px;
+        background-image: none;
+    }
+
+    .additional__display.tutor {
+        background-image: none;
+    }
+
+    .additional__display.intensive {
+        background-image: none;
+    }
+
+    .additional__display.practice {
         background-image: none;
     }
 }

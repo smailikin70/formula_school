@@ -14,6 +14,14 @@
     break-inside: avoid;
 }
 
+.feedback__section .feedback__card.yellow {
+    background: rgba(255, 234, 61, 0.15);
+}
+
+.feedback__section .feedback__card.orange {
+    background: rgba(255, 175, 3, 0.15);
+}
+
 .feedback__section .feedback__head {
     width: 100%;
     display: flex;

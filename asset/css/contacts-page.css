@@ -18,6 +18,7 @@
     background-color: rgb(203, 202, 202);
     border-radius: calc(var(--border-radius) / 2);
     min-height: 240px;
+    overflow: hidden;
 }
 
 .contacts__section .branch__card__title span {
