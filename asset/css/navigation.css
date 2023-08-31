@@ -3,16 +3,21 @@
     background: rgba(185, 171, 255, 0.15);
 }
 
-
-
 .nav__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.nav__item {
+    padding: 20px;
+}
+
+.nav__item.active {
+    border-bottom: 4px solid #9A4EFF;
+}
+
 .nav__link {
-    padding: 24px;
     font-weight: 500;
 }
 
@@ -57,6 +62,10 @@
         .nav__link {
             padding: 0;
         }
+    }
+
+    .nav__item {
+        padding: 0;
     }
 
     .nav__active{

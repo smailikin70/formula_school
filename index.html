@@ -26,7 +26,7 @@
                 <h2 class="h1__descr hello__descr">
                     С 2012 года готовим к ЕГЭ, ОГЭ, олимпиадам по математике и физике при поддержке МФТИ
                 </h2>
-                <a href="javascript:PopUpShow()" class="btn hello__button">
+                <a href="#user__form" class="btn hello__button">
                     Выбрать курс
                 </a>
             </div>
@@ -213,7 +213,7 @@
                         <!--                        <img src="../source/img/branch_2.png" alt="" class="branch__img">-->
                     </li>
                     <li class="branch__item">
-                        <a href="not-found.html" class="branch__button">
+                        <a href="contacts.html" class="branch__button">
                             <span class="branch__button__name">
                                 Подробнее о филиалах
                             </span>
@@ -1179,7 +1179,7 @@
                 и узнай, в какой профессии у тебя есть способности!
             </div>
             <button class="btn btn--primary go-to-pop-up__btn">
-                <a href="#user__form">Записаться</a>
+                <a href="career-guidance.html#career__form">Записаться</a>
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9.33203 22.6654L22.6654 9.33203" stroke="#232323" stroke-width="2" stroke-linecap="round"
                           stroke-linejoin="round"/>
@@ -1257,7 +1257,7 @@
                             <div class="h1__title achievment__white_text">
                                 Узнайте больше о достижениях и успехах образовательного центра «Формула»
                             </div>
-                            <a href="not-found.html" class="btn btn--primary achievment__btn">
+                            <a href="achievements.html" class="btn btn--primary achievment__btn">
                                 Узнать
                                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
@@ -1432,12 +1432,14 @@
                         <input type="text" name="firstname" required class="input input__name" placeholder="Ваше имя">
                         <input type="text" name="phone__number" required class="input input__phone"
                                placeholder="Номер телефона">
-                        <input type="email" name="email" required class="input input__email" placeholder="Email">
-                        <select id="program_select" name="program" onchange="ChangeProgram()"
+                        <input type="email" name="email" class="input input__email" placeholder="Email">
+                        <select id="program_select" required name="program" onchange="ChangeProgram()"
                                 class="input input__program">
                             <option value="ЕГЭ" class="input__prog__item">Подготовка к ЕГЭ</option>
                             <option value="ОГЭ" class="input__prog__item">Подготовка к ОГЭ</option>
+                            <option value="Практические и лабораторные" class="input__prog__item">Запись на практические и лабораторные занятия</option>
                             <option value="Олимпиады" class="input__prog__item">Подготовка к олимпиадам</option>
+                            <option value="Репетиторские услуги" class="input__prog__item">Репетиторские услуги</option>
                             <option value="Профориентация" class="input__prog__item">Профориентация</option>
                         </select>
                         <select id="lesson_select" name="lesson" onchange="ChangeLesson()" class="input input__lesson">
@@ -1458,6 +1460,7 @@
                             <option value="9" class="input__prog__item">9 класс</option>
                             <option value="10" class="input__prog__item">10 класс</option>
                             <option value="11" class="input__prog__item">11 класс</option>
+                            <option value="другое" class="input__prog__item">Другое</option>
                         </select>
                         <select id="address_select" name="address" onchange="ChangeAddress()"
                                 class="input input__address">
@@ -1473,10 +1476,12 @@
                             </option>
                             <option value="ул. Крыгина 77" class="input__prog__item">р-н Эгершельд: ул. Крыгина 77
                             </option>
-                            <option value="Добролюбова 20" class="input__prog__item">район Тихая: Добролюбова 20
+                            <option value="Добролюбова 20" class="input__prog__item">р-н Тихая: Добролюбова 20
                             </option>
                             <option value="Черемуховая 7" class="input__prog__item">р-н Чуркин: Черемуховая 7</option>
+                            <option value="Уборевича 3" class="input__prog__item">р-н Центр: Уборевича 3</option>
                             <option value="Ивановская 6/4" class="input__prog__item">Ивановская 6/4</option>
+                            <option value="Пос. Угловое, ул. Рабочая 1-я 16/1" class="input__prog__item">Пос. Угловое, ул. Рабочая 1-я 16/1</option>
                             <option value="г. Находка, Восточный пр-кт 4-А" class="input__prog__item">г. Находка:
                                 мкр.Врангель, Восточный пр-кт 4-А
                             </option>

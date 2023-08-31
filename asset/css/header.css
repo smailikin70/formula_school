@@ -10,13 +10,12 @@
     justify-content: right;
     align-items: center;
     gap: var(--gap);
-    padding: 15px 0;
+    padding: 25px 0;
 }
 
 .logo__btn {
     position: absolute;
     max-width: 280px;
-    top: 0;
     left: 0;
     object-fit: contain;
 }
@@ -48,21 +47,25 @@
 }
 
 @media screen and (max-width: 1100px) {
-    .header-content__location{
+    .header-content__location {
+        display: none;
+    }
+
+    .header-content__tel {
         display: none;
     }
 }
 
 @media screen and (max-width: 780px) {
 
-    .header__content{
+    .logo__btn {
+        top: 0;
+    }
+
+    .header__content {
         padding-top: 90px;
         justify-content: space-around;
     }
 
-    .header-content__tel{
-        display: none;
-    }
-    
 }
 
