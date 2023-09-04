@@ -26,10 +26,6 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 1310px) {
-
-}
-
 @media screen and (max-width: 1054px) {
     .template__item {
         height: 54px;
@@ -40,6 +36,9 @@
 }
 
 @media screen and (max-width: 798px) {
+    .template__list {
+        margin-bottom: 20px;
+    }
     .template__item {
         height: 50px;
         margin-right: 8px;

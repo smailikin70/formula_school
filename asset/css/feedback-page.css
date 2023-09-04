@@ -50,3 +50,16 @@
     color: var(--text-black);
     background-color: var(--yellow);
 }
+
+@media screen and (max-width: 798px) {
+    .feedback__section .feedback__content {
+        columns: 1;
+        column-gap: 15px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .feedback__section .feedback__item {
+        font-size: 12px;
+    }
+}
