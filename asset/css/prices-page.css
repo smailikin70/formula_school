@@ -1,0 +1,103 @@
+.prices__section .prices__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.prices__section .prices__card {
+    border-radius: 25px;
+    box-shadow: 0 20px 30px 0 rgba(38, 39, 95, 0.05);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.prices__section .prices__card__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prices__section .prices__card__title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.prices__section .prices__card__tag {
+    color: #FFF;
+    background-color: var(--primary-100);
+    padding: 10px 20px 10px 20px;
+    border-radius: 25px;
+    width: fit-content;
+}
+
+.prices__section .prices__card__item {
+    list-style: initial;
+}
+
+.prices__section .prices__card__cost .cost__title {
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.prices__section .prices__card__cost .cost__number {
+    color: #FFAF03;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.prices__section .prices__card__btn__apply {
+    color: #333;
+    border: 3px solid #FFEA3D;
+}
+
+.prices__section .prices__card__btn__apply:hover {
+    background-color: #FFEA3D;
+}
+
+@media screen and (max-width: 1310px) {
+    .prices__section .prices__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 1054px) {
+    .prices__section .prices__card__cost .cost__number {
+        font-size: 20px;
+    }
+    .prices__section .prices__card__buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 798px) {
+    .prices__section .prices__content {
+        grid-template-columns: 1fr;
+    }
+    .prices__section .prices__card {
+        padding: 40px;
+        gap: 15px;
+    }
+    .prices__section .prices__card__cost .cost__number {
+        font-size: 18px;
+    }
+    .prices__section .prices__card__buttons {
+        flex-direction: row;
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .prices__section .prices__card__cost .cost__number {
+        font-size: 16px;
+    }
+    .prices__section .prices__card__buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
